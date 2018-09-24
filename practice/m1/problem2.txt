@@ -1,0 +1,4 @@
+The 4 different algorithms used to access the array are quick find, quick union, weighted quick union, weigthed quick union with path compression.
+The best algorithm is weighted quick union with path compression, because the time complexity to solve the problem is very less when compared with the other algorithms. It takes about 6 seconds to execute.
+N+Mlog*N. N is the number of objects and M is the number of operations.
+the union-find cost can be calculated more effectively.
