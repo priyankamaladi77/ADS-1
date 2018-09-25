@@ -1,0 +1,11 @@
+size
+pushLeft 3
+pushLeft 2
+pushLeft 1
+removeRight
+removeRight
+removeRight
+pushRight 1
+pushRight 2
+pushRight 3
+size

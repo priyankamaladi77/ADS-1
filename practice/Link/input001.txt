@@ -1,0 +1,8 @@
+size
+pushLeft 10
+pushLeft 20
+pushLeft 30
+pushRight 40
+pushRight 50
+pushLeft 60
+size
