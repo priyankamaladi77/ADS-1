@@ -10,11 +10,11 @@ public final class Solution {
     private Solution() {
         //Solution.
     }
-    /**
-     * Main Method.
-     *
-     * @param      args  The arguments
-     */
+    // /**
+    //  * Main Method.
+    //  *
+    //  * @param      args  The arguments
+    //  */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int len = scan.nextInt();
