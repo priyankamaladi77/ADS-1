@@ -1,31 +1,31 @@
 import java.util.Scanner;
-// /**
-//  * Class for deque.
-//  */
+/**
+ * Class for deque.
+ */
 class Deque {
-    // /**
-    //  * {Variable head of node type}.
-    //  */
+    /**
+     * {Variable head of node type}.
+     */
     private Node head;
-    // /**
-    //  * {Variable tail of node type}.
-    //  */
+    /**
+     * {Variable tail of node type}.
+     */
     private Node tail;
-    // /**
-    //  * {Variable size of int type}.
-    //  */
+    /**
+     * {Variable size of int type}.
+     */
     private int size;
-    // /**
-    //  * Class for node.
-    //  */
+    /**
+     * Class for node.
+     */
     private class Node {
-        // /**
-        //  * {Variable item of type integer}.
-        //  */
+        /**
+         * {Variable item of type integer}.
+         */
         private int item;
-        // /**
-        //  * {Variable next of type node}.
-        //  */
+        /**
+         * {Variable next of type node}.
+         */
         private Node next;
     }
     /**
