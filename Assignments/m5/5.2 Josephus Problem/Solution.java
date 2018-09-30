@@ -116,7 +116,7 @@ public final class Solution {
                 for (int i = 0; i < rounds - 1; i++) {
                     deque.pushRight(deque.popLeft());
                 }
-                str += deque.popLeft();
+                str += deque.popLeft() + " ";
             }
             System.out.print(str.substring(0, str.length() - 1));
             System.out.println();
