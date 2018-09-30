@@ -1,23 +1,23 @@
 import java.util.Scanner;
-// /**
-//  * Linked Lists.
-//  */
+/**
+ * Linked Lists.
+ */
 class LinkedList {
-    // /**
-    //  * Node variable.
-    //  */
+    /**
+     * Node variable.
+     */
     private Node first;
-    // /**
-    //  * Class for node.
-    //  */
+    /**
+     * Class for node.
+     */
     private class Node {
-        // /**
-        //  * character for item.
-        //  */
+        /**
+         * character for item.
+         */
         private char item;
-        // /**
-        //  * Node object for next.
-        //  */
+        /**
+         * Node object for next.
+         */
         private Node next;
     }
     /**
@@ -26,11 +26,11 @@ class LinkedList {
     LinkedList() {
         this.first = null;
     }
-    // /**
-    //  * Determines if empty.
-    //  *
-    //  * @return     True if empty, False otherwise.
-    //  */
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return (first == null);
     }
