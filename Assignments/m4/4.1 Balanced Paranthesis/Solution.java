@@ -119,7 +119,7 @@ public static boolean check(final Scanner scan) {
             } else if (ch == '}') {
                 if (list1 == null || list1.pop() != '{') {
                     flag = false;
-                    // return flag;
+                    return flag;
                 }
             }
         }
