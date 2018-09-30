@@ -125,7 +125,7 @@ class Deque {
             String s = "[";
             Node old1 = head;
             while (old1 != null) {
-                s += old1.item ;
+                s += old1.item + ", ";
                 old1 = old1.next;
             }
             return s.substring(0, s.length() - 2) + "]";
