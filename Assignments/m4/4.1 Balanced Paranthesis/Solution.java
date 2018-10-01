@@ -118,6 +118,7 @@ public static boolean check(final Scanner scan) {
                 }
             }
         }
-        return(list1.isEmpty());
+        return (list1.isEmpty());
     }
 }
+ 
