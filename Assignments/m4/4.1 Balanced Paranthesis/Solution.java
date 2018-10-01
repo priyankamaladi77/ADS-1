@@ -29,7 +29,7 @@ class LinkedList {
     /**
      * Determines if empty.
      *
-     * @return     True if empty, False otherwise.
+     * @return  returns true if empty, False otherwise.
      */
     public boolean isEmpty() {
         return (first == null);
@@ -37,7 +37,7 @@ class LinkedList {
     /**
      * to pop the element.
      *
-     * @return     element on the top.
+     * @return returns the pop element on the top.
      */
     public char pop() {
         if (first != null) {
@@ -96,7 +96,6 @@ public final class Solution {
      * @return     {Boolean}
      */
 public static boolean check(final Scanner scan) {
-        boolean flag = false;
         LinkedList list1 = new LinkedList();
         String str = scan.nextLine();
         for (int i = 0; i < str.length(); i++) {
@@ -104,30 +103,25 @@ public static boolean check(final Scanner scan) {
             if (ch == '(' || ch == '{' || ch == '[') {
                 list1.push(ch);
             } else if (list1.isEmpty()) {
-                flag = false;
-                return flag;
+                return false;
             } else if (ch == ')') {
                 if (list1 == null || list1.pop() != '(') {
-                    flag = false;
-                    return flag;
+                    return false;
                 }
             } else if (ch == ']') {
                 if (list1 == null || list1.pop() != '[') {
-                    flag = false;
-                    return flag;
+                    return false;
                 }
             } else if (ch == '}') {
                 if (list1 == null || list1.pop() != '{') {
-                    flag = false;
-                    return flag;
+                    return false;
                 }
             }
         }
         if (list1.isEmpty()) {
-            flag = true;
-            return flag;
+            return true;
         } else {
-            return flag;
+            return false;
         }
     }
 }
