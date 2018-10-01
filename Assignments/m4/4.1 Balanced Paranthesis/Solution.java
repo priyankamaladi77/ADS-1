@@ -37,16 +37,18 @@ class LinkedList {
     /**
      * to pop the element.
      *
-     * @return returns the pop element on the top.
+     * @return     returns the pop element on the top.
+     *
+     * @throws     Exception  { exception_description }
      */
-    public char pop() throws Exception{
+    public char pop() throws Exception {
 
         if (first != null) {
             char val = first.item;
             first = first.next;
             return val;
         } else {
-        	throw new Exception("Stack is Empty");
+            throw new Exception("Stack is Empty");
         }
     }
     /**
@@ -91,11 +93,11 @@ public final class Solution {
         }
     }
     /**
-     * {Method to check whether the parenthesis are balanced}.
+     * { function_description }
      *
-     * @param      scan  The scanner object
+     * @param      scan  The scan
      *
-     * @return     {Boolean}
+     * @return     { description_of_the_return_value }
      */
 public static boolean check(final Scanner scan) {
         LinkedList list1 = new LinkedList();
@@ -107,29 +109,29 @@ public static boolean check(final Scanner scan) {
             } else if (list1.isEmpty()) {
                 return false;
             } else if (ch == ')') {
-            	try {
-                	if (list1 == null || list1.pop() != '(') {
-                    	return false;
-                	}
+                try {
+                    if (list1 == null || list1.pop() != '(') {
+                        return false;
+                    }
                 } catch (Exception e) {
-                	System.out.println(e.getMessage());
+                    System.out.println(e.getMessage());
                 }
             } else if (ch == ']') {
-            	try {
-	                if (list1 == null || list1.pop() != '[') {
-	                    return false;
-	                }
-	            } catch (Exception e) {
-	            	System.out.println(e.getMessage());
-	            }
+                try {
+                    if (list1 == null || list1.pop() != '[') {
+                        return false;
+                    }
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
             } else if (ch == '}') {
                 try {
-	                if (list1 == null || list1.pop() != '{') {
-	                    return false;
-	                }
-	            } catch (Exception e) {
-	            	System.out.println(e.getMessage());
-	            }
+                    if (list1 == null || list1.pop() != '{') {
+                        return false;
+                    }
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
             }
         }
         return (list1.isEmpty());
