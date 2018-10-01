@@ -39,13 +39,15 @@ class LinkedList {
      *
      * @return returns the pop element on the top.
      */
-    public char pop() {
+    public char pop() throws Exception{
+
         if (first != null) {
             char val = first.item;
             first = first.next;
             return val;
+        } else {
+        	throw new Exception("Stack is Empty");
         }
-        return '\0';
     }
     /**
      * to push the element.
@@ -105,17 +107,29 @@ public static boolean check(final Scanner scan) {
             } else if (list1.isEmpty()) {
                 return false;
             } else if (ch == ')') {
-                if (list1 == null || list1.pop() != '(') {
-                    return false;
+            	try {
+                	if (list1 == null || list1.pop() != '(') {
+                    	return false;
+                	}
+                } catch (Exception e) {
+                	System.out.println(e.getMessage());
                 }
             } else if (ch == ']') {
-                if (list1 == null || list1.pop() != '[') {
-                    return false;
-                }
+            	try {
+	                if (list1 == null || list1.pop() != '[') {
+	                    return false;
+	                }
+	            } catch (Exception e) {
+	            	System.out.println(e.getMessage());
+	            }
             } else if (ch == '}') {
-                if (list1 == null || list1.pop() != '{') {
-                    return false;
-                }
+                try {
+	                if (list1 == null || list1.pop() != '{') {
+	                    return false;
+	                }
+	            } catch (Exception e) {
+	            	System.out.println(e.getMessage());
+	            }
             }
         }
         return (list1.isEmpty());
