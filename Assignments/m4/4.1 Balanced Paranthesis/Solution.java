@@ -121,4 +121,3 @@ public static boolean check(final Scanner scan) {
         return (list1.isEmpty());
     }
 }
- 
