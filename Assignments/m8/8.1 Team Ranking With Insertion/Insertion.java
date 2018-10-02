@@ -15,7 +15,7 @@ class Insertion {
      * @param      i     { index }
      * @param      j   index
      */
-    private static void exchange(final Comparable[] arr, 
+    private static void exchange(final Comparable[] arr,
         final int i, final int j) {
         Comparable swap = arr[i];
         arr[i] = arr[j];
