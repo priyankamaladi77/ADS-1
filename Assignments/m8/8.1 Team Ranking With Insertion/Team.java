@@ -3,19 +3,19 @@
  */
 class Team implements Comparable<Team> {
     /**
-     * { variable teamname description }
+     * { variable teamname description }.
      */
     private String teamname;
     /**
-     * { variable wins description }
+     * { variable wins description }.
      */
     private int wins;
     /**
-     * { variable losses description }
+     * { variable losses description }.
      */
     private int losses;
     /**
-     * { variable draws description }
+     * { variable draws description }.
      */
     private int draws;
    /**
