@@ -5,6 +5,9 @@ class Insertion {
     /**
      * Constructs the object of insertion sort.
      */
+    Insertion() {
+        //empty constructor.
+    }
     /**
      * { exchanges the elements in ith index with min index}.
      * Time complexity : 1
@@ -12,7 +15,7 @@ class Insertion {
      * @param      i     { index }
      * @param      j   index
      */
-    private static void exchange(final Comparable[] arr,
+    private static void exchange(final Comparable[] arr, 
         final int i, final int j) {
         Comparable swap = arr[i];
         arr[i] = arr[j];
