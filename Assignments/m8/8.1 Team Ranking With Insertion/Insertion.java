@@ -1,14 +1,40 @@
+/**
+ * Class for Insertion.
+ */
 class Insertion {
+	/**
+	 * Constructs the object of insertion sort.
+	 */
 	Insertion() {
 	}
+	/**
+	 * { exchanges the elements in ith index with min index}.
+	 * Time complexity : 1
+	 * @param      arr   comparable array
+	 * @param      i     { index }
+	 * @param      min   index
+	 */
 	private static void exchange(Comparable[] arr, int i, int j) {
 		Comparable swap = arr[i];
 		arr[i] = arr[j];
 		arr[j] = swap;
 	}
+	/**
+	 * { function for comparing two objects }.
+	 *
+	 * @param      v     { Comparable object }
+	 * @param      w     { Comparable object }
+	 *
+	 * @return     { returns -1 if condition is satisfied else returns 1 }
+	 */
 	private static boolean less(Comparable v, Comparable w) {
 		 return (v.compareTo(w)) < 0;
 	}
+	/**
+	 * { sorts all the elements in an array using insertion sort }.
+	 *
+	 * @param      arr   comparable array
+	 */
 	public static void sort(Comparable[] arr) {
 		int num = arr.length;
 		for (int i = 0; i < num; i++) {
