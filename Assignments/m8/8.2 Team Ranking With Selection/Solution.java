@@ -1,4 +1,10 @@
+/**
+ * { imports Scanner package }
+ */
 import java.util.Scanner;
+/**
+ * { imports Arrays package }
+ */
 import java.util.Arrays;
 
 /**
@@ -7,7 +13,7 @@ import java.util.Arrays;
  */
 public final class Solution {
     /**
-     * Constructs the object.
+     * Constructs the object for solution.
      */
     private Solution() {
         //empty constructor.
