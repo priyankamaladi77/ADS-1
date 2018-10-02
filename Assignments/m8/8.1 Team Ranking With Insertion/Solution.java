@@ -1,4 +1,10 @@
+/**
+ * { imports Scanner package }
+ */
 import java.util.Scanner;
+/**
+ * { imports Arrays package }
+ */
 import java.util.Arrays;
 
 /**
@@ -7,13 +13,13 @@ import java.util.Arrays;
  */
 public final class Solution {
     /**
-     * Constructs the object.
+     * Constructs the object for Solution.
      */
     private Solution() {
         //empty constructor.
     }
     /**
-     * main method for Team Ranking with selection sort.
+     * main method for Team Ranking with insertion sort.
      *
      * @param      args  The arguments
      */
