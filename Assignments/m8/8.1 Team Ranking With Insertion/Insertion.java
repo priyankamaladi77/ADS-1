@@ -5,16 +5,16 @@ class Insertion {
 	/**
 	 * Constructs the object of insertion sort.
 	 */
-	Insertion() {
+	private Insertion() {
 	}
 	/**
 	 * { exchanges the elements in ith index with min index}.
 	 * Time complexity : 1
 	 * @param      arr   comparable array
 	 * @param      i     { index }
-	 * @param      min   index
+	 * @param      j   index
 	 */
-	private static void exchange(Comparable[] arr, int i, int j) {
+	private static void exchange(final Comparable[] arr, final int i, final int j) {
 		Comparable swap = arr[i];
 		arr[i] = arr[j];
 		arr[j] = swap;
@@ -27,7 +27,7 @@ class Insertion {
 	 *
 	 * @return     { returns -1 if condition is satisfied else returns 1 }
 	 */
-	private static boolean less(Comparable v, Comparable w) {
+	private static boolean less(final Comparable v, final Comparable w) {
 		 return (v.compareTo(w)) < 0;
 	}
 	/**
@@ -35,7 +35,7 @@ class Insertion {
 	 *
 	 * @param      arr   comparable array
 	 */
-	public static void sort(Comparable[] arr) {
+	public static void sort(final Comparable[] arr) {
 		int num = arr.length;
 		for (int i = 0; i < num; i++) {
 			for (int j = i; j > 0; j--) {
@@ -44,7 +44,7 @@ class Insertion {
 				} else {
 					break;
 				}
-			}	
+			}
 		}
 	}
 }
