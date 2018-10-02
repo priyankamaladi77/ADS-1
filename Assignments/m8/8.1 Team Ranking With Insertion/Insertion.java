@@ -5,8 +5,6 @@ class Insertion {
     /**
      * Constructs the object of insertion sort.
      */
-    Insertion() {
-    }
     /**
      * { exchanges the elements in ith index with min index}.
      * Time complexity : 1
