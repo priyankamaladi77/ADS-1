@@ -2,9 +2,21 @@
  * Class for team.
  */
 class Team implements Comparable<Team> {
+    /**
+     * { variable teamname description }.
+     */
     private String teamname;
+    /**
+     * { variable wins description }.
+     */
     private int wins;
+    /**
+     * { variable losses description }.
+     */
     private int losses;
+    /**
+     * { variable draws description }.
+     */
     private int draws;
    /**
     * Constructs the object. for team
@@ -14,7 +26,8 @@ class Team implements Comparable<Team> {
     * @param      lose  The lose
     * @param      draw  The draw
     */
-    Team(String name, int win, int lose, int draw) {
+    Team(final String name, final int win,
+        final int lose, final int draw) {
         this.teamname = name;
         this.wins = win;
         this.losses = lose;
@@ -57,7 +70,7 @@ class Team implements Comparable<Team> {
      *
      * @param      nam   The nam
      */
-    public void setName(String nam) {
+    public void setName(final String nam) {
         this.teamname = nam;
     }
     /**
@@ -65,7 +78,7 @@ class Team implements Comparable<Team> {
      *
      * @param      won   The won
      */
-    public void setWins(int won) {
+    public void setWins(final int won) {
         this.wins = won;
     }
     /**
@@ -73,7 +86,7 @@ class Team implements Comparable<Team> {
      *
      * @param      loss  The loss
      */
-    public void setLosses(int loss) {
+    public void setLosses(final int loss) {
         this.losses = loss;
     }
     /**
@@ -81,7 +94,7 @@ class Team implements Comparable<Team> {
      *
      * @param      draw  The draw
      */
-    public void setDraws(int draw) {
+    public void setDraws(final int draw) {
         this.draws = draw;
     }
     /**
@@ -93,7 +106,7 @@ class Team implements Comparable<Team> {
         return this.teamname;
     }
     /**
-     * { compares to objects according to given condition }
+     * { compares to objects according to given condition }.
      *
      * @param      that  object
      *
