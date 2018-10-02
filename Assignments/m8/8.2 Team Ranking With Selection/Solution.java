@@ -13,7 +13,7 @@ public class Solution {
 		Team[] teams = new Team[lines.length];
 		for (String line : lines) {
 			String[] tokens = line.split(",");
-			teams[i++] = new Team(tokens[0], Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]));
+			teams[i++] = new Team(tokens[0], Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
 		}
 		Selection.sort(teams);
 		String result = Arrays.toString(teams);
