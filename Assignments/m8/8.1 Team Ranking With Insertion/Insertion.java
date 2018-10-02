@@ -2,7 +2,12 @@
  * Class for Insertion.
  */
 class Insertion {
-
+    /**
+     * Constructs the object of insertion sort.
+     */
+    private Insertion() {
+        //empty constructor.
+    }
     /**
      * { exchanges the elements in ith index with min index}.
      * Time complexity : 1
