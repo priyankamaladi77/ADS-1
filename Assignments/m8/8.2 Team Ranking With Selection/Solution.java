@@ -5,7 +5,7 @@ import java.util.Arrays;
  * Class for solution.
  * @author     priyanka maladi.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
