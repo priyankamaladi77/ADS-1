@@ -1,7 +1,7 @@
 /**
  * Class for Insertion.
  */
-class Insertion {
+final class Insertion {
     /**
      * Constructs the object of insertion sort.
      */
