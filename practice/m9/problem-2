@@ -1,0 +1,29 @@
+Activity - 4
+Give traces by showing how the keys E A S Y Q U E S T I O N are sorted with bottom-up mergesort.
+
+	E	A   S   Y	Q	U 	E	S   T   I	O	N
+
+	E	A
+	A   E	
+			S   Y
+			S   Y
+					Q	U
+					Q	U
+							E	S
+							E	S
+									T   I
+									I	T
+											O	N
+											N	O
+	A   E	S   Y
+	A   E	S   Y
+					Q	U   E	S
+					E	Q	S   U
+									I	T 	N	O
+									I	N	O	T
+	A   E	S   Y   E	Q	S   U
+	A   E	E	Q	S   S   U   Y
+
+	A   E	E	Q	S   S   U   Y	I	N	O	T
+	A   E	E	I	N	O	Q	S   S   T   U   Y
+
