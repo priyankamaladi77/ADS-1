@@ -10,7 +10,7 @@ final class Insertion {
     }
     /**
      * { exchanges the elements in ith index with min index}.
-     * Time complexity : 1
+     * Time complexity : constant
      * @param      arr   comparable array
      * @param      i     { index }
      * @param      j   index
