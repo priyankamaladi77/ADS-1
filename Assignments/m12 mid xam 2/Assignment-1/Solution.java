@@ -6,7 +6,6 @@ import java.util.Scanner;
  * imports Arrays.
  */
 import java.util.Arrays;
-
 /**
  * Class for insertion.
  */
