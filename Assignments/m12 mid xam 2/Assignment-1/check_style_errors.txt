@@ -1,25 +1,4 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:6:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:7:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:9:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:11:9: More than 7 parameters (found 8). [ParameterNumber]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:12: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:101:36: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:110:36: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:119:27: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:128:27: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:137:27: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:146:30: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:155:33: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:163:35: '(' is followed by whitespace. [ParenPad]
-[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:181: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:50:5: More than 7 parameters (found 8). [ParameterNumber]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 1 errors.
