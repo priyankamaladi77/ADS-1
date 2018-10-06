@@ -1,4 +1,10 @@
+/**
+ * imports Scanner.
+ */
 import java.util.Scanner;
+/**
+ * imports Arrays.
+ */
 import java.util.Arrays;
 
 /**
@@ -26,7 +32,6 @@ class Insertion {
         arr[i] = arr[j];
         arr[j] = swap;
     }
-    
     /**
      * compares to comparable objects.
      *
@@ -44,7 +49,6 @@ class Insertion {
      * sorts the given array using insertion sort.
      *
      * @param      arr   The comparable arr
-     * The time complexity is O(N^2).
      */
     public static void sort(final Comparable[] arr) {
         int num = arr.length;
