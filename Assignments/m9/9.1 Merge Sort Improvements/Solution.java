@@ -143,7 +143,7 @@ class Mergesort {
      * @param      mid    The middle
      * @param      hi     The higher
      */
-    public void Merging(final Comparable[] arr1,
+    public void merging(final Comparable[] arr1,
         final Comparable[] aux, final int lo, final int mid, final int hi) {
         assert isSorted(arr1, lo, mid);
         assert isSorted(arr1, mid + 1, hi);
@@ -188,7 +188,7 @@ class Mergesort {
             "Array is already sorted. So, skipped the call to merge...");
             return;
         }
-        Merging(arr2, aux, lo, mid, hi);
+        merging(arr2, aux, lo, mid, hi);
     }
     /**.
      * { displays the result }

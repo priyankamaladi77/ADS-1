@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:146:17: Name 'Merging' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 1 errors.
