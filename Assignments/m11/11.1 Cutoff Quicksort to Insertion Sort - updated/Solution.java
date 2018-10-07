@@ -87,7 +87,15 @@ class QuickSort {
     public void sort(final Comparable[] array, final int cutOff) {
         sort(array, 0, array.length - 1, cutOff);
     }
-    
+    /**.
+     * { divides the array into parts }.
+     *  time complexity is O(N)
+     * @param      arr   The arr
+     * @param      lo   The lo
+     * @param      hi  The hi
+     *
+     * @return  returns index of partition.
+     */
     public int partition(final Comparable[] arr,
      final int lo, final int hi) {
         int i = lo;

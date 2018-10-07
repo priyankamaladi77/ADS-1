@@ -1,8 +1,6 @@
 Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:48: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:60: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:91:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:127: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\msitp\ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:135: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 3 errors.
