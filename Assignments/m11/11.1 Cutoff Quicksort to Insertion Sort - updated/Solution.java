@@ -131,7 +131,9 @@ class QuickSort {
         return a.compareTo(b) < 0;
     }
 }
-
+/**
+ * constructs class solution.
+ */
 public final class Solution {
     /**.
      * Constructs the object.
