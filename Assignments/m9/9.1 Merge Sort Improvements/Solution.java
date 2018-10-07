@@ -67,10 +67,10 @@ class Mergesort {
      * insertion sort. Time complexity is O(N).
      *
      * @param      a     { comparable array }
-     * @param      lo    The lower index 
+     * @param      lo    The lower index
      * @param      hi    The higher index
      */
-    public void Insertionsort(final Comparable[] a,
+    public void insertionSort(final Comparable[] a,
         final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
@@ -173,7 +173,7 @@ class Mergesort {
     public void sort(final Comparable[] arr2,
         final Comparable[] aux, final int lo, final int hi) {
         if (hi <= lo + cut) {
-            Insertionsort(aux, lo, hi);
+            insertionSort(aux, lo, hi);
             System.out.println("Insertion sort method invoked...");
             return;
         }

@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msitp\ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:73:17: Name 'Insertionsort' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] F:\msitp\ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:146:17: Name 'Merging' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
