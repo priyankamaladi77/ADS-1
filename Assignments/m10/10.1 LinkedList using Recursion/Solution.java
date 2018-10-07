@@ -3,18 +3,18 @@ import java.util.Scanner;
  * List of linkeds.
  */
 class Linkedlist {
-	/**
-	 * description of variable head.
-	 */
-	private Node head;
-	/**
-	 * description of variable size.
-	 */
-	private int size;
-	/**
-	 * Constructs the object for Linkedlist.
-	 */
-	Linkedlist() {
+    /**
+     * description of variable head.
+     */
+    private Node head;
+    /**
+     * description of variable size.
+     */
+    private int size;
+    /**
+     * Constructs the object for Linkedlist.
+     */
+    Linkedlist() {
         this.head = null;
         this.size = 0;
     }
@@ -24,7 +24,7 @@ class Linkedlist {
      * @return returns size.
      */
     public int size() {
-    	return size;
+        return size;
     }
     /**
      * Determines if empty.
@@ -32,7 +32,7 @@ class Linkedlist {
      * @return     returns true if empty, False otherwise.
      */
     public boolean isEmpty() {
-    	return head == null;
+        return head == null;
     }
     /**
      * insert at position.
@@ -52,7 +52,7 @@ class Linkedlist {
      */
     private void insertAt(final Node node,
                           final int position, final int val) {
-		if (position == 0 && head == null) {
+        if (position == 0 && head == null) {
             head = new Node(val);
         } else if (position == 0 && head != null) {
             Node oldhead = head;
