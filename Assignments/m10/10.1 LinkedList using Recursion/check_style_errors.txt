@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:41:8: Unused @param tag for 'value'. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:43:56: Expected @param tag for 'val'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.

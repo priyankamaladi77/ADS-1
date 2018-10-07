@@ -38,7 +38,7 @@ class Linkedlist {
      * insert at position.
      *
      * @param      position  The position
-     * @param      value     The value 1
+     * @param      val     The value 1
      */
     public void insertAt(final int position, final int val) {
         insertAt(head, position, val);
