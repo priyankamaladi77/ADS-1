@@ -45,7 +45,7 @@ class QuickSort {
     }
     /**.
      * Returns a string representation of the object.
-     * time complexity is O(N). 
+     * time complexity is O(N).
      * @param      arr   The arr
      *
      * @return     String representation of the object.
@@ -57,7 +57,7 @@ class QuickSort {
         }
         str += arr[arr.length - 1] + "]";
         return str;
-    } 
+    }
     /**.
      * { sorts the elements in  the array }.
      * time complexity is O(log N)
