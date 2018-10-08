@@ -4,8 +4,8 @@ class MinPQ<Q extends Comparable<Q>> {
 		this.arr = array;
 	}
 	public boolean isMinPQ() {
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (less(2*i + 1, 2*i)) {
+		for (int i = 1; i < arr.length - 1; i++) {
+			if (less(i + 1, i)) {
 				return false;
 			}
 		}
