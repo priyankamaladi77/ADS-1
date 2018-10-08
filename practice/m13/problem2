@@ -1,0 +1,18 @@
+Activity - 7
+
+Is an array that is sorted in Ascending order a min-oriented heap? Why?
+
+Yes, it is a min-oriented heap.
+
+For, Example:-
+
+a = [5, 6, 7, 8, 9]
+
+						    5
+						   /\
+						  /  \
+						 6	  7
+						/\
+					   8  9
+
+The root is smaller than the child in every level and it does not take any exchanges.
