@@ -42,6 +42,10 @@ public final class Solution {
 			break;
 			case "Float":
 			while (n > 0) {
+				String str = sc.nextLine();
+                    if (str.equals("")) {
+                        System.out.println("false");
+                    }
 				String [] tokens = sc.nextLine().split(",");
 				Float[] floattok = new Float[tokens.length];
 				for (int i = 0; i < tokens.length; i++) {
