@@ -55,8 +55,8 @@ public final class Solution {
 					MinPQ<Float> minimum = new MinPQ<Float>(floattok);
 					System.out.println(minimum.isMinPQ());
 				}
-				n--;
 			}
+				n--;
 			break;
 		default:
 		break;
