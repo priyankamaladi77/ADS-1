@@ -43,17 +43,17 @@ public final class Solution {
 			case "Float":
 			while (n > 0) {
 				String str = sc.nextLine();
-                    if (str.equals("")) {
-                        System.out.println("false");
-                    } else {
-				String [] tokens = sc.nextLine().split(",");
-				Float[] floattok = new Float[tokens.length];
-				for (int i = 0; i < tokens.length; i++) {
-					floattok[i] = Float.parseFloat(tokens[i]);					
+                if (str.equals("")) {
+                    System.out.println("false");
+                } else {
+					String [] tokens = sc.nextLine().split(",");
+					Float[] floattok = new Float[tokens.length];
+					for (int i = 0; i < tokens.length; i++) {
+						floattok[i] = Float.parseFloat(tokens[i]);					
+					}
+					MinPQ<Float> minimum = new MinPQ<Float>(floattok);
+					System.out.println(minimum.isMinPQ());
 				}
-				MinPQ<Float> minimum = new MinPQ<Float>(floattok);
-				System.out.println(minimum.isMinPQ());
-			}
 				n--;
 			}
 			break;
