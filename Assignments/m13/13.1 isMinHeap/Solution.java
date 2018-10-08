@@ -45,6 +45,7 @@ public final class Solution {
 				String str = sc.nextLine();
                 if (str.equals("")) {
                     System.out.println("false");
+                    break;
                 } else {
 					String [] tokens = sc.nextLine().split(",");
 					Float[] floattok = new Float[tokens.length];
