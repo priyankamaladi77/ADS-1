@@ -47,7 +47,7 @@ public final class Solution {
                     System.out.println("false");
                     break;
                 } else {
-					String [] tokens = sc.nextLine().split(",");
+					String [] tokens = str.split(",");
 					Float[] floattok = new Float[tokens.length];
 					for (int i = 0; i < tokens.length; i++) {
 						floattok[i] = Float.parseFloat(tokens[i]);					
@@ -55,8 +55,8 @@ public final class Solution {
 					MinPQ<Float> minimum = new MinPQ<Float>(floattok);
 					System.out.println(minimum.isMinPQ());
 				}
-			}
 				n--;
+			}
 			break;
 		default:
 		break;

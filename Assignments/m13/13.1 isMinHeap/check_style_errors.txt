@@ -9,7 +9,6 @@ Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:26: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:36: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:38: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:50: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:50:47: 'String' is followed by whitespace. [NoWhitespaceAfter]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:51: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:52: Line is longer than 80 characters (found 81). [LineLength]
@@ -17,4 +16,4 @@ Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:53: Line is longer than 80 characters (found 128). [LineLength]
 [ERROR] F:\msitp\ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:55: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 16 errors.
