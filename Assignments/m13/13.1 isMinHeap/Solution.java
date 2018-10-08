@@ -73,12 +73,12 @@ public final class Solution {
                     for (int i = 0; i < tokens.length;
                         i++) {
                         floattok[i] =
-                        Float.parseFloat(tokens[i]);          
+                        Float.parseFloat(tokens[i]);
                     }
                     MinPQ<Float> minimum = new
                     MinPQ<Float>(floattok);
-                    System.out.println
-                    (minimum.isMinPQ());
+                    System.out.println(
+                        minimum.isMinPQ());
                 }
                 n--;
             }
