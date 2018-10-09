@@ -26,7 +26,7 @@ class MinPQ<Q extends Comparable<Q>> {
         // for (int k = 1; k < arr.length - 1; k++) {
         //  if (less(2*k , k) && less(2*k + 1, k)) {
         for (int k = 1; k < arr.length - 1; k++) {
-                if (less(k + 1, k)) {
+                if (less(k*2 + 1, k*2)) {
                     return false;
                 }
             }
