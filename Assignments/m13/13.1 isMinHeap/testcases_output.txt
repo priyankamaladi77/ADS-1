@@ -5,13 +5,12 @@ false
 true
 false
 Your Output: 
-false
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
 	at MinPQ.less(MinPQ.java:45)
 	at MinPQ.isMinPQ(MinPQ.java:29)
 	at Solution.main(Solution.java:31)
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 false
 false
@@ -20,10 +19,12 @@ false
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
-	at MinPQ.less(MinPQ.java:45)
-	at MinPQ.isMinPQ(MinPQ.java:29)
-	at Solution.main(Solution.java:31)
+false
+false
+false
+false
+false
+false
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -36,10 +37,7 @@ false
 true
 false
 Your Output: 
-false
-false
-false
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
 	at MinPQ.less(MinPQ.java:45)
 	at MinPQ.isMinPQ(MinPQ.java:29)
 	at Solution.main(Solution.java:45)
@@ -50,7 +48,7 @@ true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 324
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 325
 	at MinPQ.less(MinPQ.java:45)
 	at MinPQ.isMinPQ(MinPQ.java:29)
 	at Solution.main(Solution.java:59)
