@@ -42,6 +42,6 @@ class MinPQ<Q extends Comparable<Q>> {
      * The time complexity is constant because the statment is executed once.
      */
     public boolean less(final int v, final int w) {
-        return arr[v].compareTo(arr[w]) < 0;
+        return arr[v].compareTo(arr[w]) > 0;
     }
 }
