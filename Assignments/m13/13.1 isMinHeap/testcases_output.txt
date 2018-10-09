@@ -1,16 +1,16 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 true
 false
 true
 false
 Your Output: 
-true
 false
 true
 false
+true
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 false
@@ -19,14 +19,14 @@ false
 false
 false
 Your Output: 
-false
-false
-false
-false
-false
-false
+true
+true
+true
+true
+true
+true
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 true
@@ -37,24 +37,24 @@ false
 true
 false
 Your Output: 
-true
-true
-true
 false
 false
 false
 true
+true
+true
 false
+true
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
+false
 true
-false
-false
+true
 ----------------------------------------
 ########## Testcase 4: Passed ##########
 Expected Output: 
