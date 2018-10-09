@@ -25,12 +25,12 @@ class MinPQ<Q extends Comparable<Q>> {
     public boolean isMinPQ() {
         // for (int k = 1; k < arr.length - 1; k++) {
         //  if (less(2*k , k) && less(2*k + 1, k)) {
-        for (int k = 1; k < arr.length; k++) {
+        for (int k = 1; k < arr.length - 1; k++) {
                 if (less(2*k + 1, 2*k)) {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
         }
     /**
      * compares two elements of Q array.
