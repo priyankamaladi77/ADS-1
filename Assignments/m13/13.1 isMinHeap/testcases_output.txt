@@ -46,23 +46,23 @@ false
 true
 false
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-true
+false
 false
 false
 ----------------------------------------
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-true
-true
+false
+false
 false
 ----------------------------------------
