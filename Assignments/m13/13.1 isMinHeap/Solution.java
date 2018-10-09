@@ -36,7 +36,7 @@ public final class Solution {
             while (n > 0) {
                 String[] tokens = sc.nextLine().split(",");
                 Integer[] integer = new Integer[tokens.length];
-                for (int i = 1; i < tokens.length; i++) {
+                for (int i = 0; i < tokens.length; i++) {
                     integer[i] =
                     Integer.parseInt(tokens[i]);
                 }
@@ -50,7 +50,7 @@ public final class Solution {
             while (n > 0) {
                 String[] tokens = sc.nextLine().split(",");
                 Double[] doubtok = new Double[tokens.length];
-                for (int i = 1; i < tokens.length; i++) {
+                for (int i = 0; i < tokens.length; i++) {
                     doubtok[i] =
                     Double.parseDouble(tokens[i]);
                 }
@@ -70,7 +70,7 @@ public final class Solution {
                     String[] tokens = str.split(",");
                     Float[] floattok = new
                     Float[tokens.length];
-                    for (int i = 1; i < tokens.length;
+                    for (int i = 0; i < tokens.length;
                         i++) {
                         floattok[i] =
                         Float.parseFloat(tokens[i]);

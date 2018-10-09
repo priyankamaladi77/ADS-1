@@ -26,7 +26,7 @@ false
 false
 false
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -37,36 +37,32 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.Integer.compareTo(Unknown Source)
-	at java.base/java.lang.Integer.compareTo(Unknown Source)
-	at MinPQ.less(MinPQ.java:45)
-	at MinPQ.isMinPQ(MinPQ.java:29)
-	at Solution.main(Solution.java:45)
+true
+true
+true
+false
+false
+false
+true
+false
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.Double.compareTo(Unknown Source)
-	at java.base/java.lang.Double.compareTo(Unknown Source)
-	at MinPQ.less(MinPQ.java:45)
-	at MinPQ.isMinPQ(MinPQ.java:29)
-	at Solution.main(Solution.java:59)
+true
+false
+false
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at java.base/java.lang.Float.compareTo(Unknown Source)
-	at java.base/java.lang.Float.compareTo(Unknown Source)
-	at MinPQ.less(MinPQ.java:45)
-	at MinPQ.isMinPQ(MinPQ.java:29)
-	at Solution.main(Solution.java:81)
+true
+true
+false
 ----------------------------------------
