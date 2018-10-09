@@ -5,9 +5,9 @@ false
 true
 false
 Your Output: 
-false
 true
-false
+true
+true
 true
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -37,13 +37,13 @@ false
 true
 false
 Your Output: 
-false
-false
-false
 true
 true
 true
-false
+true
+true
+true
+true
 true
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -52,7 +52,7 @@ true
 false
 false
 Your Output: 
-false
+true
 true
 true
 ----------------------------------------
