@@ -53,13 +53,14 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 325
 	at MinPQ.isMinPQ(MinPQ.java:29)
 	at Solution.main(Solution.java:59)
 ----------------------------------------
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-true
-true
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+	at MinPQ.less(MinPQ.java:45)
+	at MinPQ.isMinPQ(MinPQ.java:29)
+	at Solution.main(Solution.java:81)
 ----------------------------------------
