@@ -1,4 +1,10 @@
+/**
+ * { importing scanner package }.
+ */
 import java.util.Scanner;
+/**
+ * client program for Binary search Symbol table.
+ */
 public final class Solution {
 	Solution() {
 		//unused constructor.
