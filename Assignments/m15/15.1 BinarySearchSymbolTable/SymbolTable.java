@@ -1,16 +1,47 @@
 import java.util.NoSuchElementException;
+/**
+ * Class for symbol table.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class SymbolTable<Key extends Comparable<Key>, Value> {
+	/**
+	 * { var_description }
+	 */
 	private Key[] key;
+	/**
+	 * { var_description }
+	 */
 	private Value[] val;
+	/**
+	 * { var_description }
+	 */
 	private int num = 0;
+	/**
+	 * { var_description }
+	 */
 	private static final int CAPACITY = 2;
+	/**
+	 * Constructs the object.
+	 */
 	SymbolTable() {
 		this(CAPACITY);
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      capacity  The capacity
+	 */
 	SymbolTable(final int capacity) {
 		key = (Key[]) new Comparable[capacity];
         val = (Value[]) new Object[capacity];
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      capacity  The capacity
+	 */
 	private void resize(final int capacity) {
         Key[] k = (Key[]) new Comparable[capacity];
         Value[] v = (Value[]) new Object[capacity];
@@ -21,18 +52,42 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         val = v;
         key = k;
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
     	return num;
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
     	return size() == 0;
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final Key keys) {
     	if (keys == null) {
         throw new IllegalArgumentException("argument to contains() is null");
         }
         return get(keys) != null;
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int rank(final Key keys) {
         if (keys == null) {
             throw new IllegalArgumentException("argument to rank() is null");
@@ -51,6 +106,13 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return low;
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Value get(final Key keys) {
         if (keys == null) {
             throw new IllegalArgumentException("argument to get() is null");
@@ -64,6 +126,12 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return null;
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     * @param      valu  The valu
+     */
     public void put(final Key keys, final Value valu)  {
         if (keys == null) {
             throw new IllegalArgumentException(
@@ -94,6 +162,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         num++;
         assert check();
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     */
     public void delete(final Key keys) {
         if (keys == null) {
             throw new IllegalArgumentException("argument to delete() is null");
@@ -125,18 +198,29 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         assert check();
     }
+    /**
+     * { function_description }
+     */
     public void delMin() {
         if (isEmpty()) {
             throw new NoSuchElementException("Symbol table underflow error");
         }
         delete(min());
     }
+    /**
+     * { function_description }
+     */
     public void delMax() {
         if (isEmpty()) {
             throw new NoSuchElementException("Symbol table underflow error");
         }
         delete(max());
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key min() {
         if (isEmpty()) {
             throw new NoSuchElementException(
@@ -144,6 +228,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return key[0];
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key max() {
         if (isEmpty()) {
             throw new NoSuchElementException(
@@ -151,6 +240,13 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return key[num - 1];
     }
+    /**
+     * { function_description }
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException(
@@ -158,6 +254,13 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return key[k];
     }
+    /**
+     * { function_description }
+     *
+     * @param      keys  The keys
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key floor(final Key keys) {
         if (keys == null) {
             throw new IllegalArgumentException("argument to floor() is null");
@@ -172,6 +275,14 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
             return key[i - 1];
         }
     }
+    /**
+     * { function_description }
+     *
+     * @param      lo    The lower
+     * @param      hi    The higher
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size(final Key lo, final Key hi) {
         if (lo == null) {
             throw new IllegalArgumentException(
@@ -190,9 +301,19 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
             return rank(hi) - rank(lo);
         }
     }
+     /**
+      * { function_description }
+      *
+      * @return     { description_of_the_return_value }
+      */
      private boolean check() {
         return isSorted() && rankCheck();
     }
+    /**
+     * Determines if sorted.
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private boolean isSorted() {
         for (int i = 1; i < size(); i++) {
             if (key[i].compareTo(key[i - 1]) < 0)  {
@@ -201,6 +322,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return true;
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {
             if (i != rank(select(i))) {
@@ -214,6 +340,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
         return true;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String str = "";
         int i = 0;
