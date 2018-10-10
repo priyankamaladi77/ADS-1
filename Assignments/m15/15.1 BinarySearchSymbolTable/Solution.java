@@ -7,22 +7,22 @@ import java.util.Scanner;
  * class for Solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	Solution() {
-		//unused constructor.
-	}
-	/**
-	 * client program for Binary search Symbol table.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		SymbolTable<String, Integer> st = new
-		SymbolTable<String, Integer>();
-		String[] tokens = sc.nextLine().split(" ");
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //unused constructor.
+    }
+    /**
+     * client program for Binary search Symbol table.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        SymbolTable<String, Integer> st = new
+        SymbolTable<String, Integer>();
+        String[] tokens = sc.nextLine().split(" ");
         for (int i = 0; i < tokens.length; i++) {
             st.put(tokens[i], i);
         }
