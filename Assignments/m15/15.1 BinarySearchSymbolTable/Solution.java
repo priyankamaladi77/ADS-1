@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 /**
- * client program for Binary search Symbol table.
+ * class for Solution.
  */
 public final class Solution {
 	/**
@@ -12,6 +12,11 @@ public final class Solution {
 	Solution() {
 		//unused constructor.
 	}
+	/**
+	 * client program for Binary search Symbol table.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		SymbolTable<String, Integer> st = new
