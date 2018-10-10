@@ -6,43 +6,43 @@ import java.util.NoSuchElementException;
  * @param      <Value>  The value
  */
 class SymbolTable<Key extends Comparable<Key>, Value> {
-	/**
-	 * { var_description }
-	 */
-	private Key[] key;
-	/**
-	 * { var_description }
-	 */
-	private Value[] val;
-	/**
-	 * { var_description }
-	 */
-	private int num = 0;
-	/**
-	 * { var_description }
-	 */
-	private static final int CAPACITY = 2;
-	/**
-	 * Constructs the object.
-	 */
-	SymbolTable() {
-		this(CAPACITY);
-	}
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      capacity  The capacity
-	 */
-	SymbolTable(final int capacity) {
-		key = (Key[]) new Comparable[capacity];
+    /**
+     * { key array of type Key }.
+     */
+    private Key[] key;
+    /**
+     * { val array of type value }.
+     */
+    private Value[] val;
+    /**
+     * { var_description }
+     */
+    private int num = 0;
+    /**
+     * { variable num of type integer }.
+     */
+    private static final int CAPACITY = 2;
+    /**
+     * Constructs the object for symboltable.
+     */
+    SymbolTable() {
+        this(CAPACITY);
+    }
+    /**
+     * Constructs the object for symbol table.
+     *
+     * @param      capacity  The capacity
+     */
+    SymbolTable(final int capacity) {
+        key = (Key[]) new Comparable[capacity];
         val = (Value[]) new Object[capacity];
-	}
-	/**
-	 * { function_description }
-	 *
-	 * @param      capacity  The capacity
-	 */
-	private void resize(final int capacity) {
+    }
+    /**
+     * { resizes the array  }.
+     *
+     * @param      capacity  The capacity
+     */
+    private void resize(final int capacity) {
         Key[] k = (Key[]) new Comparable[capacity];
         Value[] v = (Value[]) new Object[capacity];
         for (int i = 0; i < num; i++) {
@@ -53,40 +53,40 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         key = k;
     }
     /**
-     * { function_description }
+     * { gives size of array }.
      *
-     * @return     { description_of_the_return_value }
+     * @return  returns size of array.
      */
     public int size() {
-    	return num;
+        return num;
     }
     /**
      * Determines if empty.
      *
-     * @return     True if empty, False otherwise.
+     * @return    returns true if empty, False otherwise.
      */
     public boolean isEmpty() {
-    	return size() == 0;
+        return size() == 0;
     }
     /**
-     * { function_description }
+     * { checks whether the key is present int the array }.
      *
      * @param      keys  The keys
      *
-     * @return     { description_of_the_return_value }
+     * @return  returns true if key is present otherwise false.
      */
     public boolean contains(final Key keys) {
-    	if (keys == null) {
+        if (keys == null) {
         throw new IllegalArgumentException("argument to contains() is null");
         }
         return get(keys) != null;
     }
     /**
-     * { function_description }
+     * { gives the rank }.
      *
      * @param      keys  The keys
      *
-     * @return     { description_of_the_return_value }
+     * @return   returns index low.
      */
     public int rank(final Key keys) {
         if (keys == null) {
@@ -107,11 +107,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return low;
     }
     /**
-     * { function_description }
+     * { gets the value of key }.
      *
      * @param      keys  The keys
      *
-     * @return     { description_of_the_return_value }
+     * @return  returns value of the given key.
      */
     public Value get(final Key keys) {
         if (keys == null) {
@@ -127,7 +127,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return null;
     }
     /**
-     * { function_description }
+     * { updates the value of key }.
      *
      * @param      keys  The keys
      * @param      valu  The valu
@@ -163,7 +163,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         assert check();
     }
     /**
-     * { function_description }
+     * { deletes the key }.
      *
      * @param      keys  The keys
      */
@@ -199,7 +199,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         assert check();
     }
     /**
-     * { function_description }
+     * { deletes the minimum value in array }.
      */
     public void delMin() {
         if (isEmpty()) {
@@ -208,7 +208,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         delete(min());
     }
     /**
-     * { function_description }
+     * { deletes the maximum key value in the array }.
      */
     public void delMax() {
         if (isEmpty()) {
@@ -217,9 +217,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         delete(max());
     }
     /**
-     * { function_description }
+     * { find outs minimum key }.
      *
-     * @return     { description_of_the_return_value }
+     * @return returns the value of minimum key.
      */
     public Key min() {
         if (isEmpty()) {
@@ -229,9 +229,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return key[0];
     }
     /**
-     * { function_description }
+     * { find outs the maximum key }.
      *
-     * @return     { description_of_the_return_value }
+     * @return returns the value of maximum key.
      */
     public Key max() {
         if (isEmpty()) {
@@ -241,11 +241,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return key[num - 1];
     }
     /**
-     * { function_description }
+     * { selects a specified key }
      *
      * @param      k     { parameter_description }
      *
-     * @return     { description_of_the_return_value }
+     * @return returns the value of specified key.
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
@@ -259,7 +259,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
      *
      * @param      keys  The keys
      *
-     * @return     { description_of_the_return_value }
+     * @return  returns key value.
      */
     public Key floor(final Key keys) {
         if (keys == null) {
@@ -302,9 +302,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
     }
      /**
-      * { function_description }
+      * checks whether array is sorted or not.
       *
-      * @return     { description_of_the_return_value }
+      * @return true if array is soretd otherwise false.
       */
      private boolean check() {
         return isSorted() && rankCheck();
@@ -323,9 +323,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return true;
     }
     /**
-     * { function_description }
+     * { checks the rank }.
      *
-     * @return     { description_of_the_return_value }
+     * @return true if rank is checked otherwise false.
      */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {

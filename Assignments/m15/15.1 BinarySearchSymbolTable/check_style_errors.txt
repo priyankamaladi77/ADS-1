@@ -1,24 +1,7 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:13: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:17: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:21: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:40: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:55: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:71: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:84: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:109: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:129: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:165: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:201: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:210: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:219: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:231: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:243: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:257: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:278: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:304: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\SymbolTable.java:325: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 4 errors.
