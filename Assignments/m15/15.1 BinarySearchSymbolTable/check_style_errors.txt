@@ -1,2 +1,5 @@
 Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:9:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
+Checkstyle ends with 2 errors.
