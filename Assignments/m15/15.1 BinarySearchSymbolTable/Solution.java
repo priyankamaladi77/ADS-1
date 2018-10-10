@@ -6,6 +6,9 @@ import java.util.Scanner;
  * client program for Binary search Symbol table.
  */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 		//unused constructor.
 	}
