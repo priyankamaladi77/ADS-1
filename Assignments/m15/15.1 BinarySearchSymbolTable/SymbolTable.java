@@ -15,11 +15,11 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
      */
     private Value[] val;
     /**
-     * { var_description }
+     * { variable num of type integer }.
      */
     private int num = 0;
     /**
-     * { variable num of type integer }.
+     * { varaiable capacity }.
      */
     private static final int CAPACITY = 2;
     /**
@@ -241,7 +241,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return key[num - 1];
     }
     /**
-     * { selects a specified key }
+     * { selects a specified key }.
      *
      * @param      k     { parameter_description }
      *
@@ -255,7 +255,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         return key[k];
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      keys  The keys
      *
@@ -276,7 +276,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      lo    The lower
      * @param      hi    The higher
