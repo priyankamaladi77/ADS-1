@@ -64,7 +64,8 @@ class Mergesort {
         assert isSorted(a);
     }
     /**
-     * insertion sort. Time complexity is O(N).
+     * The time complexity for this method is O(N^2).
+     * In first for loop and second loop it iterates through the size of array.
      *
      * @param      a     { comparable array }
      * @param      lo    The lower index
