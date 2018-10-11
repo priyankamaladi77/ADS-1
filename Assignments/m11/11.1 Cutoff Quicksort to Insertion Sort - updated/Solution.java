@@ -60,7 +60,7 @@ class QuickSort {
     }
     /**.
      * { sorts the elements in  the array }.
-     * time complexity is O(log N)
+     * time complexity is O(N)
      * @param      arr  The arguments
      * @param      lo  The arguments
      * @param      hi  The arguments
@@ -80,7 +80,7 @@ class QuickSort {
     }
     /**.
      * { function_description }
-     * time complexity is constant.
+     * time complexity is O(N) because it is recursive.
      * @param      array   The array
      * @param      cutOff  The cut off
      */
@@ -89,7 +89,7 @@ class QuickSort {
     }
     /**.
      * { divides the array into parts }.
-     *  time complexity is O(N)
+     *  time complexity is O(N).
      * @param      arr   The arr
      * @param      lo   The lo
      * @param      hi  The hi
@@ -145,7 +145,6 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    // time complexity is N
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         QuickSort sort = new QuickSort();
