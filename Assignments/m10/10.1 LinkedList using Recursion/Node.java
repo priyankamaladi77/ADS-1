@@ -3,15 +3,15 @@
  */
 class Node {
     /**
-     * description of variable data.
+     * variable data of type int.
      */
     private int data;
     /**
-     * description of variable nextlink.
+     * variable nextlink of type Node.
      */
     private Node nextlink;
     /**
-     * Constructs the object.
+     * Constructs the object for Node.
      *
      * @param      val  The data
      */

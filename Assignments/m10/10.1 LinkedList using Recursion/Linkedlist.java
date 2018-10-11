@@ -1,13 +1,13 @@
 /**
- * List of linkeds.
+ * constructs class for Linkedlist.
  */
 class Linkedlist {
     /**
-     * description of variable head.
+     * variable head of type Node.
      */
     private Node head;
     /**
-     * description of variable size.
+     * variable size of type int.
      */
     private int size;
     /**
@@ -19,7 +19,7 @@ class Linkedlist {
     }
     /**
      * size of list.
-     *
+     * Time complexity is constant.
      * @return returns size.
      */
     public int size() {
@@ -27,15 +27,15 @@ class Linkedlist {
     }
     /**
      * Determines if empty.
-     *
+     * Time complexity is constant.
      * @return     returns true if empty, False otherwise.
      */
     public boolean isEmpty() {
         return head == null;
     }
     /**
-     * insert at position.
-     *
+     * inserts the value at the given position.
+     * Time complexity is O(N).
      * @param      position  The position
      * @param      val     The value 1
      */
@@ -43,7 +43,8 @@ class Linkedlist {
         insertAt(head, position, val);
     }
     /**
-     * inserts at a position.
+     inserts the value at the given position.
+     * Time complexity is O(N).
      *
      * @param      node      The node
      * @param      position  The position
@@ -71,6 +72,7 @@ class Linkedlist {
     }
     /**
      * reverses the head.
+     * Time complexity is constant.
      */
     public void reverse() {
         head = reverse(head);
@@ -79,7 +81,7 @@ class Linkedlist {
      *reverse of list.
      *
      * @param      h1  The head
-     *
+     * 
      * @return  returns the node.
      */
     private Node reverse(final Node h1) {
@@ -93,8 +95,8 @@ class Linkedlist {
     }
     /**
      * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
+     * Time complexity is O(N).
+     * @return     returns String representation of the object.
      */
     public String toString() {
         String str = "";
