@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:85: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.
