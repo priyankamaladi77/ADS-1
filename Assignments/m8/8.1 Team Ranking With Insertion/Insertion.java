@@ -23,7 +23,8 @@ final class Insertion {
     }
     /**
      * { function for comparing two objects }.
-     *
+     * The time complexity is constant because only 1 statment
+     * executes when it is called.
      * @param      v     { Comparable object }
      * @param      w     { Comparable object }
      *
@@ -34,7 +35,8 @@ final class Insertion {
     }
     /**
      * { sorts all the elements in an array using insertion sort }.
-     *
+     * The time complexity is O(N^2) beacuse both for loops iterates
+     * through size of array.
      * @param      arr   comparable array
      */
     public static void sort(final Comparable[] arr) {

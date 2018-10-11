@@ -107,7 +107,7 @@ class Team implements Comparable<Team> {
     }
     /**
      * { compares to objects according to given condition }.
-     *
+     * Time complexity is constant.
      * @param      that  object
      *
      * @return     { returns -1 if condition satisfies else 1 }
