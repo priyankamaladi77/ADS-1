@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m16\16.1 BST\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msitp\ADS-1\Assignments\m16\16.1 BST\Solution.java:66:30: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
