@@ -1,2 +1,2 @@
 Starting audit...
-Checkstyle ends with 1 errors.
+Audit done.
