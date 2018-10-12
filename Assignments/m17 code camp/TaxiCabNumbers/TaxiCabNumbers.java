@@ -4,7 +4,7 @@ class TaxiCabNumbers implements Comparable<TaxiCabNumbers> {
 	private int j;
 
 	TaxiCabNumbers(int i1, int j1) {
-		this.sum = (long)(i1 * i1 * i1) + (j1 * j1 * j1);
+		this.sum = (long) (i1 * i1 * i1) + (j1 * j1 * j1);
 		this.i = i1;
 		this.j = j1;
 	}
@@ -31,7 +31,7 @@ class TaxiCabNumbers implements Comparable<TaxiCabNumbers> {
         final int n = 600;
         int count = 0;
         long result = 0;
-        for (int i = 1; i <= nth; i++) {
+        for (int i = 1; i <= n; i++) {
             minPQ.insert(new TaxiCabNumbers(i, i));
         }
 
