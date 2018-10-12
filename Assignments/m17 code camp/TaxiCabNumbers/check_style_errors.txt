@@ -1,15 +1,8 @@
 Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:6:24: Parameter i1 should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:6:32: Parameter j1 should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:11:30: Parameter that should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:26:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:29:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:21:24: Parameter i1 should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:21:32: Parameter j1 should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:33:30: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
