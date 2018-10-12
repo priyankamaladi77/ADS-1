@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:21:24: Parameter i1 should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:21:32: Parameter j1 should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m17 code camp\TaxiCabNumbers\TaxiCabNumbers.java:33:30: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
