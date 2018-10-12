@@ -7,21 +7,21 @@ import java.util.Scanner;
  * @author Priyanka Maladi.
  */
 public final class Solution {
-	/**
-	 * default constructor.
-	 */
-	private Solution() {
-		//unused constructor.
-	}
-	/**
-	 * To demonstarte the main solution.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int m = sc.nextInt();
-		System.out.println(TaxiCabNumbers.findTaxiCabNumbers(n, m));
-	}
+    /**
+     * default constructor.
+     */
+    private Solution() {
+        //unused constructor.
+    }
+    /**
+     * To demonstarte the main solution.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        System.out.println(TaxiCabNumbers.findTaxiCabNumbers(n, m));
+    }
 }
