@@ -1,16 +1,16 @@
-/**
+/**.
  * imports comparator package.
  */
 import java.util.Comparator;
-/**
+/**.
  * imports Iterator package.
  */
 import java.util.Iterator;
-/**
+/**.
  * imports Nosuchelement exception package.
  */
 import java.util.NoSuchElementException;
-/**
+/**.
  * Class for minimum pq.
  *
  * @param      <Key>  The key
@@ -20,7 +20,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     private int num;
     private Comparator<Key> comparator;
 
-    /**
+    /**.
      * Initializes an empty priority queue with the given initial capacity.
      *
      * @param  initCapacity the initial capacity of this priority queue.
