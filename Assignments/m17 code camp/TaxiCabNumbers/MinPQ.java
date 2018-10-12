@@ -25,7 +25,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  initCapacity the initial capacity of this priority queue.
      */
-    public MinPQ(int Capacity) {
+    public MinPQ(final int Capacity) {
         pq = (Key[]) new Object[Capacity + 1];
         num = 0;
     }
@@ -44,7 +44,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      * @param  Capacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(int capacity, Comparator<Key> comparator) {
+    public MinPQ(final int capacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[capacity + 1];
         num = 0;
@@ -55,7 +55,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(Comparator<Key> comparator) {
+    public MinPQ(final Comparator<Key> comparator) {
         this(1, comparator);
     }
 
@@ -66,7 +66,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  keys the array of keys
      */
-    public MinPQ(Key[] keys) {
+    public MinPQ(final Key[] keys) {
         num = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
         for (int i = 0; i < num; i++)
@@ -107,7 +107,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
 
     // helper function to double the size of the heap array
-    private void resize(int incapacity) {
+    private void resize(final int incapacity) {
         assert incapacity > num;
         Key[] temp = (Key[]) new Object[incapacity];
         for (int i = 1; i <= num; i++) {
@@ -121,7 +121,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  x the key to add to this priority queue
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
         // double size of array if necessary
         if (num == pq.length - 1) resize(2 * pq.length);
 
@@ -173,7 +173,7 @@ public class MinPQ<Key> implements Iterable<Key> {
    /***************************************************************************
     * Helper functions for compares and swaps.
     ***************************************************************************/
-    private boolean greater(int i, int j) {
+    private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
         }
@@ -182,7 +182,7 @@ public class MinPQ<Key> implements Iterable<Key> {
         }
     }
 
-    private void exch(int i, int j) {
+    private void exch(final int i, final int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
@@ -194,7 +194,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
 
     // is subtree of pq[1..n] rooted at k a min heap?
-    private boolean isMinHeap(int k) {
+    private boolean isMinHeap(final int k) {
         if (k > num) return true;
         int left = 2*k;
         int right = 2*k + 1;
