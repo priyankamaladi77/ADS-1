@@ -52,7 +52,7 @@ class TaxiCabNumbers implements Comparable<TaxiCabNumbers> {
             } else {
                 run = 1;
             }
-            if (current.j < nth) {
+            if (current.j < n) {
                 minPQ.insert(new TaxiCabNumbers(current.i, current.j + 1));
             }
             previous = current;
