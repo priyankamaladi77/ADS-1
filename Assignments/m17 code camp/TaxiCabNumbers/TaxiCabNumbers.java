@@ -28,7 +28,7 @@ class TaxiCabNumbers implements Comparable<TaxiCabNumbers> {
 	}
 	public static long findTaxiCabNumbers(final int nth, final int mpair) {
         MinPQ<TaxiCabNumbers> minPQ = new MinPQ<TaxiCabNumbers>();
-        final int n = 500;
+        final int n = 600;
         int count = 0;
         long result = 0;
         for (int i = 1; i <= nth; i++) {
