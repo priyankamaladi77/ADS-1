@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Linked Lists.
  */
-class LinkedList {
+class Stack {
     /**
      * Node variable.
      */
@@ -23,7 +23,7 @@ class LinkedList {
     /**
      * Constructs the object.
      */
-    LinkedList() {
+    Stack() {
         this.first = null;
     }
     /**
@@ -101,7 +101,7 @@ public final class Solution {
      * @return returns true if list1 is empty or false otherwise.
      */
 public static boolean check(final Scanner scan) {
-        LinkedList list1 = new LinkedList();
+        Stack list1 = new Stack();
         String str = scan.nextLine();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
