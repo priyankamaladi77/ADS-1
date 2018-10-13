@@ -1,13 +1,14 @@
 import java.util.Scanner;
 /**
  * Class for solution.
+ * @author priyanka maladi.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //Empty.
+        //default constructor.
     }
     /**
      * Main method to implement Deque.
