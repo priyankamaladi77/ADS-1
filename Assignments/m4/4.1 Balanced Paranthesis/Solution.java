@@ -35,21 +35,23 @@ class LinkedList {
         return (first == null);
     }
     /**
-     * to pop the element.
+     * method to pop the element.
      *
-     * @return     returns the pop element on the top.
+     * @return returns the pop element on the top.
      *
-     * @throws     Exception  { exception_description }
+     * @throws Exception if stack is empty.
      */
     public char pop() throws Exception {
-
-        if (first != null) {
-            char val = first.item;
-            first = first.next;
-            return val;
-        } else {
-            throw new Exception("Stack is Empty");
+        if (!isEmpty()) {
+            if (first != null) {
+                char val = first.item;
+                first = first.next;
+                return val;
+            } else {
+                throw new Exception("Stack is Empty");
+            }
         }
+        return '\0';
     }
     /**
      * to push the element.
@@ -74,9 +76,9 @@ public final class Solution {
         //Empty.
     }
     /**
-     * {Main method}.
+     * Main method for paranthesis is balanced or not.
      *
-     * @param      args  The arguments
+     * @param args The arguments.
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -93,11 +95,10 @@ public final class Solution {
         }
     }
     /**
-     * { function_description }
      *
-     * @param      scan  The scan
+     * @param      scan  The scan.
      *
-     * @return     { description_of_the_return_value }
+     * @return returns true if list1 is empty or false otherwise.
      */
 public static boolean check(final Scanner scan) {
         LinkedList list1 = new LinkedList();
