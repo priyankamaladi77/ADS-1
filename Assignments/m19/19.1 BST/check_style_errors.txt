@@ -1,13 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:126:22: Parameter x should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:148:22: Parameter x should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:170:22: Parameter x should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:184:25: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:200:26: Parameter x should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:200:34: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:225:23: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:241:24: Parameter x should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:241:32: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:266:24: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 10 errors.

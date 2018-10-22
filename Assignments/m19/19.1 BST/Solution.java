@@ -123,7 +123,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private int size(Node x) {
+    private int size(final Node x) {
         if (x == null) {
             return 0;
         } else {
@@ -145,7 +145,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node max(Node x) {
+    private Node max(final Node x) {
         if (x.right == null) {
             return x;
         } else {
@@ -167,7 +167,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node min(Node x) {
+    private Node min(final Node x) {
         if (x.left == null) {
             return x;
         } else {
@@ -181,7 +181,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book ceiling(Book key) {
+    public Book ceiling(final Book key) {
         Node x = ceiling(root, key);
         if (x == null) {
             return null;
@@ -197,7 +197,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node ceiling(Node x, Book key) {
+    private Node ceiling(final Node x, final Book key) {
         if (x == null) {
             return null;
         }
@@ -222,7 +222,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book floor(Book key) {
+    public Book floor(final Book key) {
         Node x = floor(root, key);
         if (x == null) {
             return null;
@@ -238,7 +238,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node floor(Node x, Book key) {
+    private Node floor(final Node x, final Book key) {
         if (x == null) {
             return null;
         }
@@ -263,7 +263,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book select(int k) {
+    public Book select(final int k) {
         Node x = select(root, k);
         return x.key;
     }
