@@ -34,12 +34,12 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
          * { variable right of type node }.
          */
         private Node right;
-
         /**
-         * Constructs the object for Node.
+         * Constructs the object.
          *
          * @param      keys   The keys
          * @param      value  The value
+         * @param      size1  The size 1
          */
         Node(final Book keys, final int value, final int size1) {
         this.key = keys;
@@ -113,8 +113,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Size() {
-        return Size(root);
+    public int size() {
+        return size(root);
     }
     /**
      * { function_description }.
@@ -123,7 +123,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private int Size(Node x) {
+    private int size(Node x) {
         if (x == null) {
             return 0;
         } else {
@@ -135,8 +135,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book Max() {
-        return Max(root).key;
+    public Book max() {
+        return max(root).key;
     }
     /**
      * { function_description }.
@@ -145,11 +145,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node Max(Node x) {
+    private Node max(Node x) {
         if (x.right == null) {
             return x;
         } else {
-            return Max(x.right);
+            return max(x.right);
         }
     }
     /**
@@ -157,8 +157,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book Min() {
-        return Min(root).key;
+    public Book min() {
+        return min(root).key;
     }
     /**
      * { function_description }.
@@ -167,11 +167,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node Min(Node x) {
+    private Node min(Node x) {
         if (x.left == null) {
             return x;
         } else {
-            return Min(x.left);
+            return min(x.left);
         }
     }
     /**
@@ -181,8 +181,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book Ceiling(Book key) {
-        Node x = Ceiling(root, key);
+    public Book ceiling(Book key) {
+        Node x = ceiling(root, key);
         if (x == null) {
             return null;
         } else {
@@ -197,7 +197,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node Ceiling(Node x, Book key) {
+    private Node ceiling(Node x, Book key) {
         if (x == null) {
             return null;
         }
@@ -206,14 +206,14 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
             return x;
         }
         if (cmpr < 0) {
-            Node t = Ceiling(x.left, key);
+            Node t = ceiling(x.left, key);
             if (t != null) {
                 return t;
             } else {
                 return x;
             }
         }
-        return Ceiling(x.right, key);
+        return ceiling(x.right, key);
     }
     /**
      * { function_description }.
@@ -222,8 +222,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book Floor(Book key) {
-        Node x = Floor(root, key);
+    public Book floor(Book key) {
+        Node x = floor(root, key);
         if (x == null) {
             return null;
         } else {
@@ -238,7 +238,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node Floor(Node x, Book key) {
+    private Node floor(Node x, Book key) {
         if (x == null) {
             return null;
         }
@@ -247,9 +247,9 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
             return x;
         }
         if (cmpr <  0) {
-            return Floor(x.left, key);
+            return floor(x.left, key);
         }
-        Node p = Floor(x.right, key);
+        Node p = floor(x.right, key);
         if (p != null) {
             return p;
         } else {
@@ -263,8 +263,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Book Select(int k) {
-        Node x = Select(root, k);
+    public Book select(int k) {
+        Node x = select(root, k);
         return x.key;
     }
     /**
@@ -275,15 +275,15 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node Select(Node x, int k) {
+    private Node select(final Node x, final int k) {
         if (x == null) {
             return null;
         }
-        int p = Size(x.left);
+        int p = size(x.left);
         if (p > k) {
-            return Select(x.left,  k);
+            return select(x.left,  k);
         } else if (p < k) {
-            return Select(x.right, k - p - 1);
+            return select(x.right, k - p - 1);
         } else {
             return x;
         }
@@ -325,23 +325,23 @@ public final class Solution {
                 }
                 break;
             case "max":
-                System.out.println(bst.Max());
+                System.out.println(bst.max());
                 break;
             case "min":
-                System.out.println(bst.Min());
+                System.out.println(bst.min());
                 break;
             case "floor":
                 books = new Book(token[1],
                 token[2], Float.parseFloat(token[2 + 1]));
-                System.out.println(bst.Floor(books));
+                System.out.println(bst.floor(books));
                 break;
             case "ceiling":
                 books = new Book(token[1],
                 token[2], Float.parseFloat(token[2 + 1]));
-                System.out.println(bst.Ceiling(books));
+                System.out.println(bst.ceiling(books));
                 break;
             case "select":
-                System.out.println(bst.Select(
+                System.out.println(bst.select(
                     Integer.parseInt(token[1])));
                 break;
             default:
