@@ -1,10 +1,11 @@
+import java.util.NoSuchElementException;
 /**
  * Class for symbol table.
  *
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-class SymbolTable<Key extends Comparable<Key>, Value> {
+class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     /**
      * { key array of type Key }.
      */
@@ -22,9 +23,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
      */
     private static final int CAPACITY = 2;
     /**
-     * Constructs the object for symboltable.
+     * Constructs the object for BinarySearchSymbolTable.
      */
-    SymbolTable() {
+    BinarySearchSymbolTable() {
         this(CAPACITY);
     }
     /**
@@ -32,13 +33,14 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
      *
      * @param      capacity  The capacity
      */
-    SymbolTable(final int capacity) {
+    BinarySearchSymbolTable(final int capacity) {
         key = (Key[]) new Comparable[capacity];
         val = (Value[]) new Object[capacity];
     }
     /**
      * { resizes the array  }.
-     *
+     * The time complexity is O(N) because the
+     * statments in the for loop iterates for N times.
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -53,7 +55,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives size of array }.
-     *
+     * The time complexity is constant because
+     * the statment executes only once.
      * @return  returns size of array.
      */
     public int size() {
@@ -61,7 +64,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * Determines if empty.
-     *
+     * The time complexity is constant because
+     * the statment executes only once. 
      * @return    returns true if empty, False otherwise.
      */
     public boolean isEmpty() {

@@ -20,8 +20,8 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        SymbolTable<String, Integer> st = new
-        SymbolTable<String, Integer>();
+        BinarySearchSymbolTable<String, Integer> st = new
+        BinarySearchSymbolTable<String, Integer>();
         String[] tokens = sc.nextLine().split(" ");
         for (int i = 0; i < tokens.length; i++) {
             st.put(tokens[i], i);
