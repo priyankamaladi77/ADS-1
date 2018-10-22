@@ -7,7 +7,7 @@ public final class Solution {
      * Constructs the booksect.
      */
     private Solution() {
-      
+      //default constructor.
     }
     /**
      * main method.
@@ -51,8 +51,8 @@ public final class Solution {
                 System.out.println(bst.Ceiling(books));
                 break;
             case "select":
-                System.out.println(bst.Select
-                    (Integer.parseInt(token[1])));
+                System.out.println(bst.Select(
+                    Integer.parseInt(token[1])));
                 break;
             default:
                 break;

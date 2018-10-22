@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:10: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msitp\ADS-1\Assignments\m19\19.1 BST\Solution.java:55:21: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 2 errors.
