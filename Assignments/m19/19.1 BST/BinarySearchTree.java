@@ -34,7 +34,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
          */
         private Node right;
         /**
-         * Constructs the object.
+         * Constructs the object for Node.
          *
          * @param      keys   The keys
          * @param      value  The value
@@ -55,7 +55,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         root = null;
     }
     /**
-     * { function_description }.
+     * { puts the value and key into binary search tree }.
+     * The time complexity is constant.
      *.
      * @param      key   The key
      * @param      val   The value
@@ -64,13 +65,14 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         root = put(root, key, val);
     }
     /**
-     * { function_description }.
+     * { puts the value and key into binary search tree }.
+     * The time complexity is logN.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
      * @param      val   The value
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns the value of given key }
      */
     private Node put(final Node x, final Book key, final int val) {
         if (x == null) {
@@ -87,11 +89,12 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         return x;
     }
     /**
-     * { function_description }.
+     * {gives the value of given key }.
+     * The time complexity is logN.
      *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns the value of given key }
      */
     public int get(final Book key) {
         Node x = root;
@@ -109,18 +112,18 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * size function.
-     *
-     * @return     { description_of_the_return_value }
+     * The time complexity is constant.
+     * @return returns number of keys present in the bst.
      */
     public int size() {
         return size(root);
     }
     /**
-     * { function_description }.
+     * gives the size.
      *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @param      x     is a node.
+     * The time complexity is constant.
+     * @return  returns number of keys present in it.
      */
     private int size(final Node x) {
         if (x == null) {
@@ -130,19 +133,19 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * { gives maximum key }.
+     * The time complexity is constant.
+     * @return     { returns the largest key}
      */
     public Book max() {
         return max(root).key;
     }
     /**
-     * { function_description }.
+     * { gives maximum key }.
+     * The time complexity is logN.
+     * @param      x     { is a node }
      *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return     { returns the largest key }
      */
     private Node max(final Node x) {
         if (x.right == null) {
@@ -152,19 +155,19 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * { gives minimum key }.
+     * The time complexity is constant.
+     * @return     { gives minimum key }
      */
     public Book min() {
         return min(root).key;
     }
     /**
-     * { function_description }.
+     * { gives minimum key }.
      *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @param      x  is node.
+     * The time complexity is logN.
+     * @return     { Returns the smallest key }
      */
     private Node min(final Node x) {
         if (x.left == null) {
@@ -174,11 +177,13 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
+     * { gives the samllest key in
+     * the symbol table greater than or equal to key }.
+     * The time complexity is constant.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return   returns the smallest key
+     * in the symbol table greater than or equal to key.
      */
     public Book ceiling(final Book key) {
         Node x = ceiling(root, key);
@@ -189,12 +194,14 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
+     * { gives the samllest key in
+     * the symbol table greater than or equal to key }.
+     * the time complexity is logN.
+     * @param      x     { node }
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns the smallest key
+     * in the symbol table greater than or equal to key.}
      */
     private Node ceiling(final Node x, final Book key) {
         if (x == null) {
@@ -215,11 +222,13 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         return ceiling(x.right, key);
     }
     /**
-     * { function_description }.
-     *
+     * { gives the largest key in the symbol table
+     *  less than or equal to key }.
+     * The time complexity constant.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return returns the largest key in the
+     *  symbol table less than or equal to key.
      */
     public Book floor(final Book key) {
         Node x = floor(root, key);
@@ -230,12 +239,14 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
+     * { gives the largest key in the symbol table
+     *  less than or equal to key }.
+     * The time complexity is logN.
      * @param      x     { parameter_description }
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return  returns the largest key in the
+     *  symbol table less than or equal to key.
      */
     private Node floor(final Node x, final Book key) {
         if (x == null) {
@@ -256,23 +267,23 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { function_description }.
+     * {gives the key in the symbol table whose rank is k}.
+     * The time complexity is constant.
+     * @param      k
      *
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return     {returns the key in the symbol table whose rank is k}
      */
     public Book select(final int k) {
         Node x = select(root, k);
         return x.key;
     }
     /**
-     * { function_description }.
-     *
+     * {gives the key in the symbol table whose rank is k}.
+     * The time complexity is logN.
      * @param      x     { parameter_description }
      * @param      k     { parameter_description }
      *
-     * @return     { description_of_the_return_value }
+     * @return returns the key in the symbol table whose rank is k.
      */
     private Node select(final Node x, final int k) {
         if (x == null) {
