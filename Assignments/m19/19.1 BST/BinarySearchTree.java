@@ -269,7 +269,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * {gives the key in the symbol table whose rank is k}.
      * The time complexity is constant.
-     * @param      k
+     * @param      k the key.
      *
      * @return {returns the key in the symbol table whose rank is k}
      */
