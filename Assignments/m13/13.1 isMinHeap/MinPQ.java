@@ -20,7 +20,8 @@ class MinPQ<Q extends Comparable<Q>> {
      * checks if array is minPQ or not.
      *
      * @return    returns True if minimum pq, False otherwise.
-     * The time complexity is N because it iterates for half of arraylength times in the loop.
+     * The time complexity is N because it iterates
+     * for half of arraylength times in the loop.
      */
     public boolean isMinPQ() {
         // for (int k = 1; k < arr.length - 1; k++) {
