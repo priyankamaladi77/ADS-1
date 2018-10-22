@@ -1,2 +1,4 @@
 Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 Audit done.
+Checkstyle ends with 1 errors.
