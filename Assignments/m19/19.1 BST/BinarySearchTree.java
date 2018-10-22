@@ -177,7 +177,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { gives the samllest key in
+     * { gives the samllest key in.
      * the symbol table greater than or equal to key }.
      * The time complexity is constant.
      * @param      key   The key
@@ -194,7 +194,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { gives the samllest key in
+     * { gives the samllest key in.
      * the symbol table greater than or equal to key }.
      * the time complexity is logN.
      * @param      x     { node }
@@ -222,7 +222,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         return ceiling(x.right, key);
     }
     /**
-     * { gives the largest key in the symbol table
+     * { gives the largest key in the symbol table.
      *  less than or equal to key }.
      * The time complexity constant.
      * @param      key   The key
@@ -271,7 +271,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * The time complexity is constant.
      * @param      k
      *
-     * @return     {returns the key in the symbol table whose rank is k}
+     * @return {returns the key in the symbol table whose rank is k}
      */
     public Book select(final int k) {
         Node x = select(root, k);
