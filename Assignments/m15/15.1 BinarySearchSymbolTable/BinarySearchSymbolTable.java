@@ -65,7 +65,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     /**
      * Determines if empty.
      * The time complexity is constant because
-     * the statment executes only once. 
+     * the statment executes only once.
      * @return    returns true if empty, False otherwise.
      */
     public boolean isEmpty() {
