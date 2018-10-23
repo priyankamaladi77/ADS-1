@@ -56,7 +56,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { puts the value and key into binary search tree }.
-     * The time complexity is constant.
+     * The time complexity is height of the tree.
      *.
      * @param      key   The key
      * @param      val   The value
@@ -66,7 +66,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { puts the value and key into binary search tree }.
-     * The time complexity is logN.
+     * The time complexity is height of the tree.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -90,7 +90,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * {gives the value of given key }.
-     * The time complexity is logN.
+     * The time complexity is height of the tree.
      *
      * @param      key   The key
      *
@@ -134,7 +134,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives maximum key }.
-     * The time complexity is constant.
+     * The time complexity is N.
      * @return     { returns the largest key}
      */
     public Book max() {
@@ -142,7 +142,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives maximum key }.
-     * The time complexity is logN.
+     * The time complexity is N.
      * @param      x     { is a node }
      *
      * @return     { returns the largest key }
@@ -156,7 +156,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives minimum key }.
-     * The time complexity is constant.
+     * The time complexity is N.
      * @return     { gives minimum key }
      */
     public Book min() {
@@ -166,7 +166,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * { gives minimum key }.
      *
      * @param      x  is node.
-     * The time complexity is logN.
+     * The time complexity is N.
      * @return     { Returns the smallest key }
      */
     private Node min(final Node x) {
@@ -174,12 +174,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
             return x;
         } else {
             return min(x.left);
-        }
     }
     /**
      * { gives the samllest key in.
      * the symbol table greater than or equal to key }.
-     * The time complexity is constant.
+     * The time complexity is height of the tree.
      * @param      key   The key
      *
      * @return   returns the smallest key
@@ -192,11 +191,12 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         } else {
             return x.key;
         }
+        }
     }
     /**
      * { gives the samllest key in.
      * the symbol table greater than or equal to key }.
-     * the time complexity is logN.
+     * the time complexity is height of the tree.
      * @param      x     { node }
      * @param      key   The key
      *
@@ -224,7 +224,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { gives the largest key in the symbol table.
      *  less than or equal to key }.
-     * The time complexity constant.
+     * The time complexity is height of the tree.
      * @param      key   The key
      *
      * @return returns the largest key in the
@@ -241,7 +241,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { gives the largest key in the symbol table
      *  less than or equal to key }.
-     * The time complexity is logN.
+     * The time complexity is height of the tree.
      * @param      x     { parameter_description }
      * @param      key   The key
      *
@@ -268,7 +268,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * {gives the key in the symbol table whose rank is k}.
-     * The time complexity is constant.
+     * The time complexity is height of the tree.
      * @param      k the key.
      *
      * @return {returns the key in the symbol table whose rank is k}
@@ -279,7 +279,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * {gives the key in the symbol table whose rank is k}.
-     * The time complexity is logN.
+     * The time complexity is height of the tree.
      * @param      x     { parameter_description }
      * @param      k     { parameter_description }
      *
