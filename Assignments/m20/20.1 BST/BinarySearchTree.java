@@ -361,7 +361,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @param      key   The key
      *
      * @return  Removes the specified key and
-     *  its associated value from this symbol table 
+     *  its associated value from this symbol table
      */
     private Node del(final Node x, final Book key) {
         Node y = x;
