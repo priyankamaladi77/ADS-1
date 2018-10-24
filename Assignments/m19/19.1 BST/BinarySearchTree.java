@@ -134,7 +134,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives maximum key }.
-     * The time complexity is N.
+     * The time complexity is height of the tree.
      * @return     { returns the largest key}
      */
     public Book max() {
@@ -142,7 +142,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives maximum key }.
-     * The time complexity is N.
+     * The time complexity is height of the tree.
      * @param      x     { is a node }
      *
      * @return     { returns the largest key }
@@ -156,7 +156,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
     /**
      * { gives minimum key }.
-     * The time complexity is N.
+     * The time complexity is height of the tree.
      * @return     { gives minimum key }
      */
     public Book min() {
@@ -166,7 +166,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * { gives minimum key }.
      *
      * @param      x  is node.
-     * The time complexity is N.
+     * The time complexity is height of the tree.
      * @return     { Returns the smallest key }
      */
     private Node min(final Node x) {
@@ -177,7 +177,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 }
     /**
-     * { gives the samllest key in.
+     * { gives the samllest key.
      * the symbol table greater than or equal to key }.
      * The time complexity is height of the tree.
      * @param      key   The key
@@ -194,7 +194,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * { gives the samllest key in.
+     * { gives the samllest key.
      * the symbol table greater than or equal to key }.
      * the time complexity is height of the tree.
      * @param      x     { node }
