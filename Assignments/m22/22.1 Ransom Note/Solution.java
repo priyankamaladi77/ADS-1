@@ -55,15 +55,15 @@ public final class Solution {
  */
 class Queue<Item> implements Iterable<Item> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node<Item> first;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node<Item> last;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int n;
 
@@ -74,11 +74,11 @@ class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node<Item> next;
     }
@@ -166,7 +166,7 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Returns an iterator that iterates over
+     * Returns an iterator that iterates over.
      *  the items in this queue in FIFO order.
      *
      * @return an iterator that iterates over
@@ -183,7 +183,7 @@ class Queue<Item> implements Iterable<Item> {
     //
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node<Item> current;
 
@@ -191,9 +191,17 @@ class Queue<Item> implements Iterable<Item> {
             current = first1;
         }
 
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
+        /**
+         * { function_description }
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
