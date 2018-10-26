@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
 Audit done.
-Checkstyle ends with 1 errors.
