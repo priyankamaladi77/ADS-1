@@ -69,7 +69,7 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * { var_description }.
      */
-    private int num = 0x7fffffff;
+    private static final int NUM = 0x7fffffff;
     /**
      * { var_description }.
      */
@@ -117,7 +117,7 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & (num % m));
+        return (key.hashCode() & (NUM % m));
     }
     /**
      * Returns the number of key-value pairs in this symbol table.
