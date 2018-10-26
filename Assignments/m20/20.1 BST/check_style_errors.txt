@@ -4,8 +4,7 @@ Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:181:23: Parameter x should be final. [FinalParameters]
 [ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:181:31: Parameter key should be final. [FinalParameters]
 [ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:182: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:184: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:185: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:186: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:186:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:189:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 7 errors.
