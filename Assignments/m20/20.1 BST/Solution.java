@@ -19,7 +19,8 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarySearchTree<Book, Integer> bst = new BinarySearchTree<Book, Integer>();
+        BinarySearchTree<Book, Integer> bst =
+        new BinarySearchTree<Book, Integer>();
         while (sc.hasNext()) {
             String[] token = sc.nextLine().split(",");
             switch (token[0]) {
