@@ -48,32 +48,56 @@ public final class Solution {
     }
 }
 
-class SeparateChainingHashST<Key, Value> {
-    private static final int INIT_CAPACITY = 4;
 
+/**
+ * Class for separate chaining hash st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
+class SeparateChainingHashST<Key, Value> {
+    /**
+     * { var_description }.
+     */
+    private static final int INIT_CAPACITY = 4;
+    /**
+     * { var_description }.
+     */
     private int n;
+    /**
+     * { var_description }.
+     */
     private int m;
+    /**
+     * { var_description }.
+     */
     private SequentialSearchST<Key, Value>[] st;
     /**
      * Initializes an empty symbol table.
      */
-    public SeparateChainingHashST() {
+    SeparateChainingHashST() {
         this(INIT_CAPACITY);
     }
     /**
      * Initializes an empty symbol table with {@code m} chains.
      * @param m the initial number of chains
      */
-    public SeparateChainingHashST(int m) {
-        this.m = m;
-        st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+    SeparateChainingHashST(final int m1) {
+        this.m = m1;
+        st = (SequentialSearchST<Key, Value>[])
+        new SequentialSearchST[m];
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
-    // resize the hash table to have the given number of chains,
-    // rehashing all of the keys
-    private void resize(int chains) {
-        SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
+    /**
+     * { function_description }.
+     *
+     * @param      chains  The chains
+     */
+    private void resize(final int chains) {
+        SeparateChainingHashST<Key, Value> temp =
+        new SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
                 temp.put(key, st[i].get(key));
@@ -83,9 +107,15 @@ class SeparateChainingHashST<Key, Value> {
         this.n  = temp.n;
         this.st = temp.st;
     }
-    // hash value between 0 and m-1
-    private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+    /**
+     * { function_description }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int hash(final Key key) {
+        return (key.hashCode() & (0x7fffffff % m));
     }
     /**
      * Returns the number of key-value pairs in this symbol table.
@@ -112,7 +142,7 @@ class SeparateChainingHashST<Key, Value> {
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
     /**
@@ -123,45 +153,66 @@ class SeparateChainingHashST<Key, Value> {
      *         {@code null} if no such value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         int i = hash(key);
         return st[i].get(key);
     }
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
+     * Inserts the specified key-value pair into the.
+     *  symbol table, overwriting the old
+     * value with the new value if the symbol table
+     *  already contains the specified key.
+     * Deletes the specified key (and its associated
+     *  value) from this symbol table
      * if the specified value is {@code null}.
      *
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
         }
         // double table size if average length of list >= 10
-        if (n >= 10*m) resize(2*m);
+        if (n >= (2 + 2 + 2 + 2 + 2) * m) {
+            resize(2 * m);
+        }
 
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     }
-    public void delete(Key key) {
+    /**
+     * { function_description }.
+     *
+     * @param      key   The key
+     */
+    public void delete(final Key key) {
         int i = hash(key);
-        if (st[i].contains(key)) n--;
+        if (st[i].contains(key)) {
+            n--;
+        }
         st[i].delete(key);
         // halve table size if average length of list <= 2
-        if (m > INIT_CAPACITY && n <= 2*m) resize(m/2);
+        if (m > INIT_CAPACITY && n <= 2 * m) {
+            resize(m / 2);
+        }
     }
-    // return keys in symbol table as an Iterable
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-            for (Key key : st[i].keys())
+            for (Key key : st[i].keys()) {
                 queue.enqueue(key);
+            }
         }
         return queue;
     }
