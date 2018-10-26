@@ -129,8 +129,7 @@ class Queue<Item> implements Iterable<Item> {
         last.next = null;
         if (isEmpty()) {
             first = last;
-        }
-        else {
+        } else {
             oldlast.next = last;
         }
         n++;
@@ -176,17 +175,22 @@ class Queue<Item> implements Iterable<Item> {
         return new ListIterator<Item>(first);
     }
 
-    //
-    // an iterator, doesn't implement remove() since it's optional
-    //
-    // @param      <Item>  The item
-    //
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
          * { var_description }.
          */
         private Node<Item> current;
 
+        /**
+         * Constructs the object.
+         *
+         * @param      first1  The first 1
+         */
         ListIterator(final Node<Item> first1) {
             current = first1;
         }
@@ -200,13 +204,13 @@ class Queue<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */

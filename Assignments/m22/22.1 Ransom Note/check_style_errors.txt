@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:132:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:184: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:190:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:202: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:208: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
