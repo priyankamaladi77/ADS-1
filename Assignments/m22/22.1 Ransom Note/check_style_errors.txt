@@ -1,6 +1,4 @@
 Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:90:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:189:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.

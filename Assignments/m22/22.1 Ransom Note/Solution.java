@@ -87,7 +87,7 @@ class SequentialSearchST<Key, Value> {
          * @param      val1   The value 1
          * @param      next1  The next 1
          */
-        public Node(final Key key1, final Value val1,
+        Node(final Key key1, final Value val1,
         final Node next1)  {
             this.key  = key1;
             this.val  = val1;
@@ -183,9 +183,14 @@ class SequentialSearchST<Key, Value> {
     public void delete(final Key key) {
         first = delete(first, key);
     }
-
-    // delete key in linked list beginning at Node x
-    // warning: function call stack too large if table is large
+    /**
+     * { function_description }.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node delete(final Node x, final Key key) {
         if (x == null) {
             return null;
