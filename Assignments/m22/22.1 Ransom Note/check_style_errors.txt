@@ -1,6 +1,6 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:83:8: Unused @param tag for 'm'. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:85:38: Expected @param tag for 'm1'. [JavadocMethod]
-[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:118:35: '0x7fffffff' is a magic number. [MagicNumber]
+[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:71:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:71:17: Name 'NUM' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:71:23: '0x7fffffff' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 3 errors.

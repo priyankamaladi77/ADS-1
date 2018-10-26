@@ -68,6 +68,7 @@ class SeparateChainingHashST<Key, Value> {
      * { var_description }.
      */
     private int m;
+    private int NUM = 0x7fffffff;
     /**
      * { var_description }.
      */
@@ -80,7 +81,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Initializes an empty symbol table with {@code m} chains.
-     * @param m the initial number of chains
+     * @param m1 the initial number of chains
      */
     SeparateChainingHashST(final int m1) {
         this.m = m1;
@@ -115,7 +116,7 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & (0x7fffffff % m));
+        return (key.hashCode() & (NUM % m));
     }
     /**
      * Returns the number of key-value pairs in this symbol table.
