@@ -1,2 +1,4 @@
 Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m22\22.1 Ransom Note\Solution.java:72:23: '0x7fffffff' is a magic number. [MagicNumber]
 Audit done.
+Checkstyle ends with 1 errors.
