@@ -16,11 +16,11 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         /**
          * { variable key of type Book }.
          */
-        private Book key;
+        private Key key;
         /**
          * { variable value of type string}.
          */
-        private int val;
+        private Value val;
         /**
          * { variable left of type node }.
          */
@@ -40,7 +40,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
          * @param      value  The value
          * @param      size1  The size 1
          */
-        Node(final Book keys, final int value, final int size1) {
+        Node(final Key keys, final Value value, final int size1) {
         this.key = keys;
         this.val = value;
         this.size = size1;
@@ -61,7 +61,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(final Book key, final int val) {
+    public void put(final Key key, final Value val) {
         root = put(root, key, val);
     }
     /**
@@ -74,7 +74,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { returns the value of given key }
      */
-    private Node put(final Node x, final Book key, final int val) {
+    private Node put(final Node x, final Key key, final Value val) {
         if (x == null) {
             return new Node(key, val, 1);
         }
@@ -96,19 +96,16 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { returns the value of given key }
      */
-    public int get(final Book key) {
-        Node x = root;
-        while (x != null) {
-            int cmpr = key.compareTo(x.key);
-            if (cmpr < 0) {
-                x = x.left;
-            } else if (cmpr > 0) {
-                x = x.right;
-            } else if (cmpr == 0) {
-                return x.val;
-            }
-        }
-        return -1;
+    public Value get(Key key) {
+        return get(root, key);
+    }
+
+    private Value get(Node x, Key key) {
+        if (x == null) return null;
+        int cmp = key.compareTo(x.key);
+        if      (cmp < 0) return get(x.left, key);
+        else if (cmp > 0) return get(x.right, key);
+        else              return x.val;
     }
     /**
      * size function.
@@ -137,7 +134,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * The time complexity is height of the tree.
      * @return     { returns the largest key}
      */
-    public Book max() {
+    public Key max() {
         return max(root).key;
     }
     /**
@@ -159,7 +156,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * The time complexity is height of the tree.
      * @return     { gives minimum key }
      */
-    public Book min() {
+    public Key min() {
         return min(root).key;
     }
     /**
@@ -185,7 +182,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return   returns the smallest key
      * in the symbol table greater than or equal to key.
      */
-    public Book ceiling(final Book key) {
+    public Key ceiling(final Key key) {
         Node x = ceiling(root, key);
         if (x == null) {
             return null;
@@ -203,7 +200,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return     { returns the smallest key
      * in the symbol table greater than or equal to key.}
      */
-    private Node ceiling(final Node x, final Book key) {
+    private Node ceiling(final Node x, final Key key) {
         if (x == null) {
             return null;
         }
@@ -230,7 +227,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return returns the largest key in the
      *  symbol table less than or equal to key.
      */
-    public Book floor(final Book key) {
+    public Key floor(final Key key) {
         Node x = floor(root, key);
         if (x == null) {
             return null;
@@ -248,7 +245,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return  returns the largest key in the
      *  symbol table less than or equal to key.
      */
-    private Node floor(final Node x, final Book key) {
+    private Node floor(final Node x, final Key key) {
         if (x == null) {
             return null;
         }
@@ -273,7 +270,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return {returns the key in the symbol table whose rank is k}
      */
-    public Book select(final int k) {
+    public Key select(final int k) {
         Node x = select(root, k);
         return x.key;
     }
@@ -351,7 +348,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * The time complexity is height of the tree.
      * @param      key   The key
      */
-    public void del(final Book key) {
+    public void del(final Key key) {
         root = del(root, key);
     }
     /**
@@ -363,7 +360,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return  Removes the specified key and
      *  its associated value from this symbol table
      */
-    private Node del(final Node x, final Book key) {
+    private Node del(final Node x, final Key key) {
         Node y = x;
         if (y == null) {
             return null;

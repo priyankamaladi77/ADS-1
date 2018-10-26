@@ -19,7 +19,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarySearchTree bst = new BinarySearchTree();
+        BinarySearchTree<Book, Integer> bst = new BinarySearchTree<Book, Integer>();
         while (sc.hasNext()) {
             String[] token = sc.nextLine().split(",");
             switch (token[0]) {
@@ -31,7 +31,7 @@ public final class Solution {
             case "get":
                 books = new Book(token[1], token[2],
                 Float.parseFloat(token[2 + 1]));
-                if (bst.get(books) == -1) {
+                if (bst.get(books) == null) {
                     System.out.println("null");
                 } else {
                     System.out.println(bst.get(books));
