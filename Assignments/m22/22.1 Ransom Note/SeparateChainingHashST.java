@@ -4,7 +4,7 @@
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-class SeparateChainingHashST<Key, Value> {
+public class SeparateChainingHashST<Key, Value> {
     /**
      * { var_description }.
      */
