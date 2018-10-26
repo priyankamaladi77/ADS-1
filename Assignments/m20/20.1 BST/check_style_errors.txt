@@ -1,2 +1,11 @@
 Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:177:22: Parameter key should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:181:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:181:23: Parameter x should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:181:31: Parameter key should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:182: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:184: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:185: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msitp\ADS-1\Assignments\m20\20.1 BST\Solution.java:186: 'else' construct must use '{}'s. [NeedBraces]
 Audit done.
+Checkstyle ends with 8 errors.
