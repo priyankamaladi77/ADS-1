@@ -55,24 +55,49 @@ public final class Solution {
  * @param      <Value>  The value
  */
 class SequentialSearchST<Key, Value> {
+    /**
+     * { var_description }.
+     */
     private int n;
+    /**
+     * { var_description }.
+     */
     private Node first;
-
+    /**
+     * Class for node.
+     */
     private class Node {
+        /**
+         * { var_description }.
+         */
         private Key key;
+        /**
+         * { var_description }.
+         */
         private Value val;
+        /**
+         * { var_description }.
+         */
         private Node next;
 
-        public Node(Key key, Value val, Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+        /**
+         * Constructs the object.
+         *
+         * @param      key1   The key 1
+         * @param      val1   The value 1
+         * @param      next1  The next 1
+         */
+        public Node(final Key key1, final Value val1,
+        final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
     /**
      * Initializes an empty symbol table.
      */
-    public SequentialSearchST() {
+    SequentialSearchST() {
     }
 
     /**
@@ -102,7 +127,7 @@ class SequentialSearchST<Key, Value> {
      * @return     {@code true} if this symbol table contains {@code key};
      *             {@code false} otherwise
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
 
@@ -115,10 +140,11 @@ class SequentialSearchST<Key, Value> {
      *             symbol table and {@code null} if the key is not in the symbol
      *             table
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
@@ -132,7 +158,7 @@ class SequentialSearchST<Key, Value> {
      * @param      key   the key
      * @param      val   the value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
@@ -154,14 +180,16 @@ class SequentialSearchST<Key, Value> {
      *
      * @param      key   the key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         first = delete(first, key);
     }
 
     // delete key in linked list beginning at Node x
     // warning: function call stack too large if table is large
-    private Node delete(Node x, Key key) {
-        if (x == null) return null;
+    private Node delete(final Node x, final Key key) {
+        if (x == null) {
+            return null;
+        }
         if (key.equals(x.key)) {
             n--;
             return x.next;
@@ -180,8 +208,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
             queue.enqueue(x.key);
+        }
         return queue;
     }
 }
