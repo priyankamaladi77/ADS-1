@@ -6,7 +6,7 @@ import java.util.Scanner;
  * class for Solution.
  * @author Priyanka Maladi.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object for Solution class.
      */

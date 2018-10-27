@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m24 final xam\1\Solution.java:9: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 1 errors.
