@@ -14,7 +14,6 @@ class Student {
      * variable total of type double.
      */
     private double total;
-    
     /**
      * Constructs the object for Student class.
      *
@@ -62,6 +61,11 @@ class Student {
     public int compareTo(final Student that) {
         return this.getStudentName().compareTo(that.getStudentName());
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return getStudentName();
     }
