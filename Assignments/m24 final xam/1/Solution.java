@@ -6,10 +6,13 @@ import java.util.Scanner;
  * class for Solution.
  * @author Priyanka Maladi.
  */
-final class Solution {
+class Solution {
     /**
      * Constructs the object for Solution class.
      */
+    Solution() {
+        //default constructor.
+    }
     /**
      * main method.
      *
