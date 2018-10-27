@@ -10,7 +10,7 @@ class Solution {
     /**
      * Constructs the object for Solution class.
      */
-    Solution() {
+    private Solution() {
         //default constructor.
     }
     /**
