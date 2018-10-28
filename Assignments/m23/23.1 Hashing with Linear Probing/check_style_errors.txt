@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 1 errors.
