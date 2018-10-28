@@ -72,6 +72,10 @@ class LinearProbingHashST<Key, Value> {
      */
     private Value[] vals;
     /**
+     * NUM of type int.
+     */
+    private static final int NUM = 8;
+    /**
      * Initializes an empty symbol table.
      */
     public LinearProbingHashST() {
@@ -204,24 +208,27 @@ class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) resize(m / 2);
+        if (n > 0 && n <= m / NUM) {
+            resize(m / 2);
+        }
     }
     /**
      * Displays the hash table in dictonary format.
-     * The time complexity is constant.
+     * The time complexity is N as the
+     * for loop iterates till the size of hashtable.
      */
      public void display() {
-        if(size() == 0) {
+        if (size() == 0) {
             System.out.println("{}");
             return;
         }
         String str = "{";
-        for(int i=0; i<keys.length;i++) {
-            if(keys[i] != null) {
+        for (int i = 0; i < keys.length; i++) {
+            if (keys[i] != null) {
                 str += keys[i] + ":" + vals[i] + ", ";
             }
         }
-        str = str.substring(0, str.length()-2);
+        str = str.substring(0, str.length() - 2);
         str += "}";
         System.out.println(str);
     }
