@@ -1,16 +1,16 @@
-/**.
+/**
  * Class for linear probing hash st.
  *
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-public class LinearProbingHashST<Key, Value> {
+class LinearProbingHashST<Key, Value> {
     /**
      * variable capacity of type int.
      */
     private static final int INIT_CAPACITY = 4;
     /**
-     * variable n number of key value pairs of type int. 
+     * variable n number of key value pairs of type int.
      */
     private int n;
     /**
@@ -26,9 +26,17 @@ public class LinearProbingHashST<Key, Value> {
      */
     private Value[] vals;
     /**
+     * NUM of type int.
+     */
+    private static final int NUM = 8;
+    /**
+     * NUM1 of type int.
+     */
+    private static final int NUM1 = 11;
+    /**
      * Initializes an empty symbol table.
      */
-    public LinearProbingHashST() {
+    LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
     /**
@@ -36,7 +44,7 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @param capacity the initial capacity
      */
-    public LinearProbingHashST(int capacity) {
+    LinearProbingHashST(final int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -60,8 +68,8 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     {hash number of int tuype }
      */
-    private int hash(Key key) {
-        return (key.hashCode() * 11) % m;
+    private int hash(final Key key) {
+        return (key.hashCode() * NUM1) % m;
     }
     /**
      * checks if the key contains or not.
@@ -71,8 +79,7 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     { returns true if key contained else false}
      */
-    public boolean contains(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
 
@@ -81,8 +88,9 @@ public class LinearProbingHashST<Key, Value> {
      * The time complexity is N as loop iterates till end.
      * @param      capacity  The capacity
      */
-    private void resize(int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
+    private void resize(final int capacity) {
+        LinearProbingHashST<Key, Value> temp =
+        new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], vals[i]);
@@ -93,17 +101,20 @@ public class LinearProbingHashST<Key, Value> {
         m    = temp.m;
     }
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
+     * Inserts the specified key-value pair
+     * into the symbol table, overwriting the old
      * The time complexity is constant.
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
         }
-        if (n >= m / 2) resize(2 * m);
+        if (n >= m / 2) {
+            resize(2 * m);
+        }
 
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -123,10 +134,12 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     {gets value of Key of value type }
      */
-    public Value get(Key key) {
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-            if (keys[i].equals(key))
+    public Value get(final Key key) {
+        for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
+            if (keys[i].equals(key)) {
                 return vals[i];
+            }
+        }
         return null;
     }
     /**
@@ -134,8 +147,10 @@ public class LinearProbingHashST<Key, Value> {
      * The time complexity is constant.
      * @param      key   The key
      */
-    public void delete(Key key) {
-        if (!contains(key)) return;
+    public void delete(final Key key) {
+        if (!contains(key)) {
+            return;
+        }
 
         // find position i of key
         int i = hash(key);
@@ -158,24 +173,27 @@ public class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) resize(m / 2);
+        if (n > 0 && n <= m / NUM) {
+            resize(m / 2);
+        }
     }
     /**
      * Displays the hash table in dictonary format.
-     * The time complexity is constant.
+     * The time complexity is N as the
+     * for loop iterates till the size of hashtable.
      */
      public void display() {
-        if(size() == 0) {
+        if (size() == 0) {
             System.out.println("{}");
             return;
         }
         String str = "{";
-        for(int i=0; i<keys.length;i++) {
-            if(keys[i] != null) {
+        for (int i = 0; i < keys.length; i++) {
+            if (keys[i] != null) {
                 str += keys[i] + ":" + vals[i] + ", ";
             }
         }
-        str = str.substring(0, str.length()-2);
+        str = str.substring(0, str.length() - 2);
         str += "}";
         System.out.println(str);
     }
