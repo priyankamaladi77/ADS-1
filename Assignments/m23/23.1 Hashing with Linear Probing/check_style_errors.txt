@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:185: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 1 errors.
