@@ -1,23 +1,4 @@
 Starting audit...
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:59: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:81:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:89:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:89:32: Parameter capacity should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:113:22: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:114:34: '11' is a magic number. [MagicNumber]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:124:29: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:125: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:134:25: Parameter capacity should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:135: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:146: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:151:21: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:151:30: Parameter val should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:156: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:176:22: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:177: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:178: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:187:24: Parameter key should be final. [FinalParameters]
-[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:188: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msitp\ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:185: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 1 errors.
