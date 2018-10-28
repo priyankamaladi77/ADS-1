@@ -6,18 +6,17 @@ import java.util.Iterator;
  */
 class Queue<Item> implements Iterable<Item> {
     /**
-     * { var_description }.
+     * { variable first of type node }.
      */
     private Node<Item> first;
     /**
-     * { var_description }.
+     * { variable last of type node }.
      */
     private Node<Item> last;
     /**
-     * { var_description }.
+     * { variable n of type int }.
      */
     private int n;
-
     /**
      * Class for node.
      *
@@ -25,11 +24,11 @@ class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**
-         * { var_description }.
+         * { variable item of type Item }.
          */
         private Item item;
         /**
-         * { var_description }.
+         * { variable next of type Node }.
          */
         private Node<Item> next;
     }
@@ -133,10 +132,9 @@ class Queue<Item> implements Iterable<Item> {
      */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * { var_description }.
+         * { variable current of type Node}.
          */
         private Node<Item> current;
-
         /**
          * Constructs the object.
          *

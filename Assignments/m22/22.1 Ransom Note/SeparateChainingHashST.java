@@ -6,23 +6,23 @@
  */
 class SeparateChainingHashST<Key, Value> {
     /**
-     * { var_description }.
+     * { variable INIT_CAPACITY of type int }.
      */
     private static final int INIT_CAPACITY = 4;
     /**
-     * { var_description }.
+     * { variable n of type int }.
      */
     private int n;
     /**
-     * { var_description }.
+     * { variable m of type int}.
      */
     private int m;
     /**
-     * { var_description }.
+     * { variable NUM of type int }.
      */
     private static final int NUM = 0x7fffffff;
     /**
-     * { var_description }.
+     * { variable st of type sequentialSearchST }.
      */
     private SequentialSearchST<Key, Value>[] st;
     /**
@@ -44,8 +44,10 @@ class SeparateChainingHashST<Key, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
+     * resize the hash table to have the given number of chains.
+     * rehashing all of the keys
+     * Time complexity is N as the loop iterates
+     * through the size of hash table.
      * @param      chains  The chains
      */
     private void resize(final int chains) {
@@ -61,18 +63,18 @@ class SeparateChainingHashST<Key, Value> {
         this.st = temp.st;
     }
     /**
-     * { function_description }.
+     * { hash value between 0 and m-1 }.
      *
      * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
+     * Time compleixtyn is constant as each statement is executed only once.
+     * @return returns hash value between 0 and m-1
      */
     private int hash(final Key key) {
         return (key.hashCode() & (NUM % m));
     }
     /**
      * Returns the number of key-value pairs in this symbol table.
-     *
+     * Time compleixty is constant as each statement is executed only once.
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -80,7 +82,7 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Returns true if this symbol table is empty.
-     *
+     * Time compleixty is constant as each statement is executed only once.
      * @return {@code true} if this symbol table is empty;
      *         {@code false} otherwise
      */
@@ -89,39 +91,35 @@ class SeparateChainingHashST<Key, Value> {
     }
     /**
      * Returns true if this symbol table contains the specified key.
+     * Time compleixty is constant as each statement is executed only once
+     * @param      key   the key
      *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key};
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @return     {@code true} if this symbol table contains {@code key};
+     *             {@code false} otherwise
      */
     public boolean contains(final Key key) {
         return get(key) != null;
     }
     /**
      * Returns the value associated with the specified key in this symbol table.
+     * Time complexity is constant.
+     * @param      key   the key
      *
-     * @param  key the key
-     * @return the value associated with {@code key} in the symbol table;
-     *         {@code null} if no such value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @return     the value associated with {@code key} in the symbol table;
+     *             {@code null} if no such value
      */
     public Value get(final Key key) {
         int i = hash(key);
         return st[i].get(key);
     }
     /**
-     * Inserts the specified key-value pair into the.
-     *  symbol table, overwriting the old
-     * value with the new value if the symbol table
-     *  already contains the specified key.
-     * Deletes the specified key (and its associated
-     *  value) from this symbol table
-     * if the specified value is {@code null}.
-     *
-     * @param  key the key
-     * @param  val the value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Inserts the specified key-value pair into the. symbol table, overwriting
+     * the old value with the new value if the symbol table already contains the
+     * specified key. Deletes the specified key (and its associated value) from
+     * this symbol table if the specified value is {@code null}.
+     * Time complexity is constant.
+     * @param      key   the key
+     * @param      val   the value
      */
     public void put(final Key key, final Value val) {
         if (val == null) {
@@ -140,8 +138,10 @@ class SeparateChainingHashST<Key, Value> {
         st[i].put(key, val);
     }
     /**
-     * { function_description }.
-     *
+     * Removes the specified key and its associated
+     * value from this symbol table
+     * (if the key is in this symbol table).
+     * Time complexity is constant.
      * @param      key   The key
      */
     public void delete(final Key key) {
@@ -156,9 +156,8 @@ class SeparateChainingHashST<Key, Value> {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * { gives keys in symbol table as an Iterable }.
+     * @return returns keys in symbol table as an Iterable
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();

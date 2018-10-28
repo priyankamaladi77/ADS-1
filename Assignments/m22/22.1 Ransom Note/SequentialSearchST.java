@@ -6,11 +6,11 @@
  */
 class SequentialSearchST<Key, Value> {
     /**
-     * { var_description }.
+     * { variable n of type num  }.
      */
     private int n;
     /**
-     * { var_description }.
+     * { variable first of type Node }.
      */
     private Node first;
     /**
@@ -18,20 +18,20 @@ class SequentialSearchST<Key, Value> {
      */
     private class Node {
         /**
-         * { var_description }.
+         * { variable key of type Key }.
          */
         private Key key;
         /**
-         * { var_description }.
+         * { variable val of type Value }.
          */
         private Value val;
         /**
-         * { var_description }.
+         * { variable next of type Node }.
          */
         private Node next;
 
         /**
-         * Constructs the object.
+         * Constructs the object for class SequentialSearchST.
          *
          * @param      key1   The key 1
          * @param      val1   The value 1
@@ -52,7 +52,7 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
-     *
+     * The time complexity is constant as it executes only once.
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -61,7 +61,7 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * Returns true if this symbol table is empty.
-     *
+     * The time complexity is constant as it executes only once.
      * @return {@code true} if this symbol table is empty;
      *         {@code false} otherwise
      */
@@ -71,7 +71,7 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * Returns true if this symbol table contains the specified key.
-     *
+     * The time complexity is constant as it executes only once.
      * @param      key   the key
      *
      * @return     {@code true} if this symbol table contains {@code key};
@@ -83,7 +83,7 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * Returns the value associated with the given key in this symbol table.
-     *
+     *The time complexity is N as the loop iterates till it finds null.
      * @param      key   the key
      *
      * @return     the value associated with the given key if the key is in the
@@ -104,7 +104,7 @@ class SequentialSearchST<Key, Value> {
      * the old value with the new value if the symbol table already contains the
      * specified key. Deletes the specified key (and its associated value) from
      * this symbol table if the specified value is {@code null}.
-     *
+     *  The time complexity is N as loop iterates till end
      * @param      key   the key
      * @param      val   the value
      */
@@ -127,19 +127,19 @@ class SequentialSearchST<Key, Value> {
     /**
      * Removes the specified key and its associated value from this symbol table
      * (if the key is in this symbol table).
-     *
+     * The time complexity is N.
      * @param      key   the key
      */
     public void delete(final Key key) {
         first = delete(first, key);
     }
     /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
+     * Deletes the given key.
+     *  The time complexity is N as it is a recurisive function.
+     * @param      x     { Node }
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { return is of Node type }
      */
     private Node delete(final Node x, final Key key) {
         if (x == null) {
