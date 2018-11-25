@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:6:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:14:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:14:38: Parameter arr should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:14:56: Parameter i should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:14:63: Parameter min should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:19:37: Parameter arr1 should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:19:54: Parameter arr2 should be final. [FinalParameters]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msitp\ADS-1\Assignments\m7\8.1 Selection Sort\Solution.java:22:33: Parameter arr should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 16 errors.
