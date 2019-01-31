@@ -16,7 +16,6 @@ class Insertion {
     private Insertion() {
         //empty constructor.
     }
-    
     /**
      * { Exchanges the values of i and j in comparable array }.
      *
@@ -43,7 +42,6 @@ class Insertion {
     private static boolean less(final Comparable i, final Comparable j) {
          return (i.compareTo(j)) < 0;
     }
-    
     /**
      * sorts the given array using insertion sort.
      *

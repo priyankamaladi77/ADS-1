@@ -1,4 +1,10 @@
 Starting audit...
+[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Solution.java:12: Class Insertion should be declared as final. [FinalClass]
+[ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Solution.java:67:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+Audit done.
+Checkstyle ends with 3 errors.
+Starting audit...
 [ERROR] F:\msitp\ADS-1\Assignments\m12 mid xam 2\Assignment-1\Student.java:50:5: More than 7 parameters (found 8). [ParameterNumber]
 Audit done.
 Checkstyle ends with 1 errors.

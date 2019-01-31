@@ -30,10 +30,12 @@ Ira,93,ST
 tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
 ########## Testcase 1: Failed ##########
 Expected Output: 
 divya,99,ST
@@ -75,10 +77,12 @@ tanvi,90,BC
 Raj,87,BC
 Aditya,80,ST
 priya,72,SC
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
 ########## Testcase 2: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -95,10 +99,12 @@ Abhishek,60,BC
 divya,99,Open
 Aditya,80,ST
 priya,76,SC
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
 ########## Testcase 3: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -118,10 +124,12 @@ Aditya,80,Open
 priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
 ########## Testcase 4: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -168,10 +176,12 @@ priya,76,Open
 Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
 ########## Testcase 5: Failed ##########
 Expected Output: 
 divya,99,ST
@@ -220,7 +230,9 @@ Arjun,75,Open
 rahul,73,Open
 priya,72,SC
 varsha,66,BC
+
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
+
