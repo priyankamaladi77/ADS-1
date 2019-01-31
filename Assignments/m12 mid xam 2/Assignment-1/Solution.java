@@ -49,7 +49,7 @@ class Insertion {
      */
     public static void sort(final Comparable[] arr) {
         int num = arr.length;
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < num + 1; i++) {
             for (int j = i; j > 0; j--) {
                 if (less(arr[j], arr[j - 1])) {
                     exchange(arr, j, j - 1);
