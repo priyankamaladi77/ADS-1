@@ -6,9 +6,11 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
-		while (sc.hasNext()) {
+		int i = 0;
+		while (i<n) {
 			Comparable[] tokens = sc.nextLine().split(" ");
             sort(tokens);
+            i++;
         }
 	}
 	private static void exchange(Comparable[] arr, int i, int min) {
@@ -30,8 +32,9 @@ public class Solution {
 			}
 			exchange(arr, i, min);
 		}
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + ", ");
-		}
+		// for (int i = 0; i < arr.length; i++) {
+		// 	System.out.print(arr[i] + ", ");
+		// }
+		System.out.println(Arrays.toString(arr));
 	}
 }
